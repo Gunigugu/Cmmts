@@ -23,92 +23,114 @@
 
    
   </head>
-<body>
-<header>
+  <body>
+
+ <header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
 
 <ul id="dropdown1" class="dropdown-content drop-user">
-  <li><a href="config_sAdmin.html" class="t-s du"><i class="icon-linear-cog left"></i> Configuración</a></li>
+  <li><a href="config_directivo.html" class="t-s du"><i class="icon-linear-cog left"></i> Configuración</a></li>
+  <li><a href="perfil_directivo.html" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
   
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
   <span class="circle dot"></span>
-  <li class="notifi"><h6>Notificaciones</h6></li>
+  <div clasS="notifi"><h6>Notificaciones</h6></div>
   <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
-  <li class="divider"></li>
-  <li class="notifii"><h6>Ver todas</h6></li>
 </ul>
 <ul id="dropdown3" class="dropdown-content drop-messages">
-  <span class="circle dot"></span>  
-  <li class="notifi"><h6>Mensajes</h6></li>
-  <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
+  <span class="circle dot"></span>
+  <div clasS="notifi"><h6>Mensajes</h6></div>
+  <li><a href="#!" class="t-s"><b>Don Mota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
   <li class="divider"></li>
-  <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
-  <li class="divider"></li>
-  <li class="notifii"><h6>Ver todos</h6></li>
+  <li><a href="#!" class="t-s"><b>Marta Chota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
 </ul>
 <nav>
   <div class="nav-wrapper">
   <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
     
     <ul class="breadcrumb left hide-on-small-only">
-      <li><a href="abm-instituciones.html">Instituciones</a></li>
-      <li><i class="icon-linear-chevron-right bread-i"></i></li>
-      <li><a href="#" class="b-focus">Añadir establecimiento</a></li>
+      
+      <li><a href="#" class="b-focus">Configuración de establecimiento</a></li>
     </ul>
-    <ul class="right fix">
 
+    <ul class="right fix">
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
-      
-
-      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">S Admin<i class="icon-linear-chevron-down right"></i></a></li>
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Directivo<i class="icon-linear-chevron-down right"></i></a></li>
     </ul>
   </div>
   </div>
 </nav>
 </div> 
- <!-- Main nav -->   
-
-  <!-- Fixed nav anti bullyng -->   
-
-
-      <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo"><a href="dashboard_sAdmin.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
-            </li>
-      <li class="main-nav-pad"><a href="dashboard_sAdmin.html"><i class="icon-linear-history icon-nav-size"></i> <span class="span-va">Inicio</span></a></li>
-      <li class="main-nav-pad active"><a href="abm-instituciones.html"><i class="icon-linear-city icon-nav-size"></i> <span class="span-va">Instituciones</span></a></li>
-      <li class="main-nav-pad"><a href="abm-usuarios.html"><i class="icon-linear-users icon-nav-size"></i> <span class="span-va">Usuarios</span></a></li>
-      <li class="main-nav-pad"><a href="reportes_sAdmin.html"><i class="icon-linear-graph icon-nav-size"></i> <span class="span-va">Reportes</span></a></li>
-      </ul>
+ <!-- Main nav -->
+    <ul id="nav-mobile" class="side-nav fixed">
+      <li class="logo"><a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a></li>
+      <li class="main-nav-pad"><a href="dashboard_directivo.html"><i class="icon-linear-history icon-nav-size"></i> <span class="span-va">Inicio</span></a></li>
+      <li class="no-padding main-nav-pad ">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"><i class="icon-linear-users-plus icon-nav-size"></i> <span class="span-va">Usuarios</span></a>
+            <div class="collapsible-body">
+              <ul>
+                <li class=""><a href="usuarios-alumnos_directivo.html">Alumnos</a></li>
+                <li><a href="usuarios-docentes_directivo.html">Docentes</a></li>
+                <li><a href="usuarios-padres_directivo.html">Padres</a></li>
+                <li><a href="usuarios-bedeles_directivo.html">Bedeles</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="main-nav-pad"><a href="grupos_directivo.html"><i class="icon-linear-group-work icon-nav-size"></i> <span class="span-va">Grupos</span></a></li>
+      <li class="main-nav-pad"><a href="gruposdealumnos_directivo.html"><i class="icon-linear-users icon-nav-size"></i> <span class="span-va">Grupos de alumnos</span></a></li>
+      <li class="main-nav-pad"><a href="materias_directivo.html"><i class="icon-linear-book2 icon-nav-size"></i> <span class="span-va">Materias</span></a></li>
+      <li class="main-nav-pad"><a href="validarcalificaciones_directivo.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificaciones</span></a></li>
+      <li class="main-nav-pad"><a href="convivencia_directivo.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
+      <li class="main-nav-pad"><a href="calendario_directivo.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
+      <li class="main-nav-pad"><a href="boletin_directivo.html"><i class="icon-linear-license2 icon-nav-size"></i> <span class="span-va">Boletín</span></a></li>
+      <li class="no-padding main-nav-pad ">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header"><i class="icon-linear-graph icon-nav-size"></i> <span class="span-va">Reportes</span></a>
+            <div class="collapsible-body">
+              <ul>
+                <li class=""><a href="reportes_directivo.html">Generar</a></li>
+                <li><a href="configurar-reportes_directivo.html">Configurar</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
  </header>
- 
-  <main><!-- startMain content-->   
+ <!-- startMain content--> 
+
+ <main> <!-- startMain content-->   
 <div class="container fadeIn animated">
 
-    <div class="row mar-top-soft">
+    <div class="row">
               <div class="col s10 m10 l10">
-          <h3 class="header">Añadir establecimiento</h3>
-          <h4 class="header">Datos de establecimiento</h4>      
+          <h3 class="header">Datos del establecimiento</h3>              
         </div> 
     </div>
 
   <div class="row">
         <div class="input-field col s12 m6 l6">
-            <input  id="nombre_inst" type="text" class="validate">
+            <input  value="Colegio Florida Day School - Belgrano R" id="nombre_inst" type="text" class="validate">
             <label for="nombre_inst">Nombre del establecimiento</label>    
         </div>
          <div class="input-field col s12 m6 l6">
             <select>
-              <option value="" disabled selected>Seleccionar ciudad</option>
+              <option value="" disabled selected>Buenos Aires</option>
               <option value="1">Buenos Aires</option>
               <option value="2">Mar del Plata</option>
               <option value="3">Río Grande</option>
@@ -116,45 +138,44 @@
             
           </div>
         <div class="input-field col s12 m6 l6">        
-            <input  id="nombre_apoderado" type="text" class="validate">
+            <input  value="Nahuel Huapi 3542" id="nombre_apoderado" type="text" class="validate">
             <label for="nombre_apoderado">Dirección</label>
         </div>
         <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
+            <input  value="1431" id="tel" type="number" class="validate">
             <label for="tel">Código postal</label>
         </div>
         <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
+            <input  value="23523" id="tel" type="number" class="validate">
             <label for="tel">Longitud</label>
         </div>
         <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
+            <input  value="67764" id="tel" type="number" class="validate">
             <label for="tel">Latitud</label>
         </div>
 
-        <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
-            <label for="tel">Código país</label>
+        <div class="input-field col s12 m6 l3">        
+            <input  value="54" id="number" type="number" class="validate">
+            <label for="number">Código país</label>
+        </div>
+        <div class="input-field col s12 m6 l3">        
+            <input  value="11" id="number" type="number" class="validate">
+            <label for="number">Código area</label>
         </div>
         <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
-            <label for="tel">Código area</label>
-        </div>
-        <div class="input-field col s12 m6 l6">        
-            <input  id="tel" type="number" class="validate">
-            <label for="tel">Teléfono</label>
+            <input  value="47813245" id="number" type="number" class="validate">
+            <label for="number">Teléfono</label>
         </div>
           <div class="input-field col s12 m6 l6">
-            <input  id="email" type="email" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
+            <input  value="florida@dayschool.com" id="number" type="email" class="validate">
+            <label for="number">Correo electrónico oficial</label>         
         </div>
         <div class=" col s12 m6 l6"> 
-        <i class="icon-linear-calendar-full"></i>
+              <i class="icon-linear-calendar-insert"></i>
               <label for="birthdate" class="">Fecha de inaguración</label>
-            <input type="date" class="datepicker">
+               <input type="date" class="datepicker">
         </div>
         <div class="divider mar-bot-top col s12 m12 l12"></div>
-             
         <div class="col s10 m10 l10">
           <h4 class="header">Configuración del establecimiento</h4>      
         </div>
@@ -250,13 +271,12 @@
               </div>
         </div>
   <div class="row">
-      <div class="col s12 m12 l12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Finalizar</a><a href="#" class="btn-large waves-effect waves-light center-align">Agregar otro establecimiento</a></div>
+      <div class="col s12 center-align mar-top-soft"><a href="abm-instituciones-smsg.html" class="btn-large waves-effect waves-light center-align mar-right">Guardar</a></div>
+
   </div>
- </div>
-</div>   <!-- end container-->  
 
-
- </main><!-- end Main content-->   
+  </div>   <!-- end container-->  
+  </main><!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -266,8 +286,8 @@
           </div>
 </footer>
 
+    
     <!--  Scripts-->
-
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
@@ -275,14 +295,6 @@
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script>$('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });</script>
-    <script>$(document).ready(function() {
-    $('select').material_select();
-  });</script>
-
 
   </body>
 </html>

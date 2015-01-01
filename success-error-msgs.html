@@ -24,6 +24,7 @@
    
   </head>
   <body>
+
  <header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
@@ -61,9 +62,7 @@
     
     <ul class="breadcrumb left hide-on-small-only">
       
-      <li><a href="abm-usuarios.html">Usuarios</a></li>
-      <li><i class="icon-linear-chevron-right bread-i"></i></li>
-      <li><a href="#" class="b-focus">Crear nuevo usuario</a></li>
+      <li><a href="#" class="b-focus">Instituciones</a></li>
     </ul>
 
     <ul class="right fix">
@@ -86,73 +85,52 @@
         <li class="logo"><a href="dashboard_sAdmin.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
             </li>
       <li class="main-nav-pad"><a href="dashboard_sAdmin.html"><i class="icon-linear-history icon-nav-size"></i> <span class="span-va">Inicio</span></a></li>
-      <li class="main-nav-pad"><a href="abm-instituciones.html"><i class="icon-linear-city icon-nav-size"></i> <span class="span-va">Instituciones</span></a></li>
-      <li class="main-nav-pad active"><a href="abm-usuarios.html"><i class="icon-linear-users icon-nav-size"></i> <span class="span-va">Usuarios</span></a></li>
-      <li class="main-nav-pad"><a href="reportes_sAdmin.html"><i class="icon-linear-graph icon-nav-size"></i> <span class="span-va">Reportes</span></a></li>
+      <li class="main-nav-pad active"><a href="abm-instituciones.html"><i class="icon-linear-city icon-nav-size"></i> <span class="span-va">Instituciones</span></a></li>
+      <li class="main-nav-pad"><a href="abm-usuarios.html"><i class="icon-linear-users icon-nav-size"></i> <span class="span-va">Usuarios</span></a></li>
+
       </ul>
  </header>
+ <!-- startMain content--> 
 
-<main> <!-- startMain content-->   
+ <main> <!-- startMain content-->   
 <div class="container fadeIn animated">
   <div class="row mar-top-soft">
 
-    <div class="col s12 m8 l8">
-    <h3 class="header">Belgrano Day School</h3>
-    <h5 class="header">Nivel secundario</h5>
-    </div>
-    <div class="col s12 m4 l4 center-align">
-    <img src="images/belgranods.jpg" alt="as" class="inst-thumb mar-top-soft">
+    <div class="col s12 m12 l12">
+
+      <!--  Tables Section-->
+      
+
+      <div id="striped" >
+        <div class="row">
+        <div class="success-msg2 center-align fadeInDown animated"><i class="icon-linear-check msg-i"></i>Mensaje de éxito.</div>
+
+        <div class="error-msg2 center-align fadeInDown animated"><i class="icon-linear-cross msg-i"></i>Mensaje de error.</div>
+        <div class="success-msg center-align fadeInDown animated"><i class="icon-linear-check msg-i"></i>Mensaje de éxito.</div>
+
+        <div class="error-msg center-align fadeInDown animated"><i class="icon-linear-cross msg-i"></i>Mensaje de error.</div>
+         
+
+         Toasts con acción: 
+        <a onclick="Materialize.toast('<span>Institución eliminada</span><a class=&quot;btn-flat black-text&quot; href=&quot;#!&quot;>Deshacer<a>', 5000)" data-position="top" data-delay="25" data-tooltip="Eliminar institución" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a> 
+
+        </div>
+
+          <div class="row">
+            <div class="col s12">
+              
+              
+            </div>
+          </div>
+
+
+      </div>
+
     </div><!--  End Tables Section  -->
 
 </div>
-<div class="divider mar-top-soft"></div>
-
-    <div class="row mar-top-soft">
-
-    <div class="col s12 m8 l12">
-    <h4 class="h-h3"><i class="icon-linear-plus"></i> Nuevo Usuario</h4>
-    <p class="header">Todos los campos son obligatorios</p>
-    </div>
-
-      <div class="row">
-        <div class="input-field col s12 m6 l6">
-            <input id="nombre_inst" type="text" class="validate">
-            <label for="nombre_inst">Nombre</label>    
-        </div>
-          <div class="input-field col s12 m6 l6">
-            <input id="apellido" type="text" class="validate">
-            <label for="apellido">Apellido</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input id="user_name" type="text" class="validate">
-            <label for="user_name">Nombre de usuario</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input id="password" type="password" class="validate">
-            <label for="password">Contraseña</label>
-        </div> 
-          <div class="input-field col s6">
-              <select>
-                <option value="" disabled >Asignar establecimiento</option>
-                <option value="1">Establecimiento 1</option>
-                <option value="2">Establecimiento 2</option>
-                <option value="3">Establecimiento 3</option>
-                <option value="4">Establecimiento 4</option>
-              </select>
-              <label>Establecimiento</label>
-            </div>
-  </div>
-    <div class="row">
-      <div class="col s12 center-align mar-top-soft"><a href="abm-usuarios.html" class="btn-large waves-effect waves-light center-align">crear</a></div>
-  </div>
-
-   <!--  End Tables Section  -->
-
 </div>
-
-
-</div>
-</main> <!-- end Main content-->   
+  </main><!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -176,11 +154,6 @@
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script> $(document).ready(function(){
-    $('.collapsible').collapsible({
-      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-  });</script>
 
   </body>
 </html>

@@ -29,33 +29,29 @@
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
 
-<ul id="dropdown1" class="dropdown-content drop-user">   
-    <li><a href="config_directivo.html" class="t-s du"><i class="icon-linear-cog left"></i> Configuración</a></li>
+<ul id="dropdown1" class="dropdown-content drop-user">
+  <li><a href="config_directivo.html" class="t-s du"><i class="icon-linear-cog left"></i> Configuración</a></li>
   <li><a href="perfil_directivo.html" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
   
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
   <span class="circle dot"></span>
-  <li class="notifi"><h6>Notificaciones</h6></li>
+  <div clasS="notifi"><h6>Notificaciones</h6></div>
   <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
-  <li class="divider"></li>
-  <li class="notifii"><h6>Ver todas</h6></li>
 </ul>
 <ul id="dropdown3" class="dropdown-content drop-messages">
-  <span class="circle dot"></span>  
-  <li class="notifi"><h6>Mensajes</h6></li>
-  <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
+  <span class="circle dot"></span>
+  <div clasS="notifi"><h6>Mensajes</h6></div>
+  <li><a href="#!" class="t-s"><b>Don Mota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
   <li class="divider"></li>
-  <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
-  <li class="divider"></li>
-  <li class="notifii"><h6>Ver todos</h6></li>
+  <li><a href="#!" class="t-s"><b>Marta Chota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
 </ul>
 <nav>
   <div class="nav-wrapper">
@@ -63,10 +59,7 @@
     
     <ul class="breadcrumb left hide-on-small-only">
       
-      <li><a href="grupos_directivo.html" class="">Grupos</a></li>
-      <li><i class="icon-linear-chevron-right bread-i"></i></li>
-      <li><a href="#" class="b-focus">Nuevo</a></li>
-
+      <li><a href="#" class="b-focus">Configurar reportes</a></li>
     </ul>
 
     <ul class="right fix">
@@ -88,7 +81,7 @@
             <a class="collapsible-header"><i class="icon-linear-users-plus icon-nav-size"></i> <span class="span-va">Usuarios</span></a>
             <div class="collapsible-body">
               <ul>
-                <li><a href="usuarios-alumnos_directivo.html">Alumnos</a></li>
+                <li class=""><a href="usuarios-alumnos_directivo.html">Alumnos</a></li>
                 <li><a href="usuarios-docentes_directivo.html">Docentes</a></li>
                 <li><a href="usuarios-padres_directivo.html">Padres</a></li>
                 <li><a href="usuarios-bedeles_directivo.html">Bedeles</a></li>
@@ -97,7 +90,7 @@
           </li>
         </ul>
       </li>
-      <li class="main-nav-pad active"><a href="grupos_directivo.html"><i class="icon-linear-group-work icon-nav-size"></i> <span class="span-va">Grupos</span></a></li>
+      <li class="main-nav-pad"><a href="grupos_directivo.html"><i class="icon-linear-group-work icon-nav-size"></i> <span class="span-va">Grupos</span></a></li>
       <li class="main-nav-pad"><a href="gruposdealumnos_directivo.html"><i class="icon-linear-users icon-nav-size"></i> <span class="span-va">Grupos de alumnos</span></a></li>
       <li class="main-nav-pad"><a href="materias_directivo.html"><i class="icon-linear-book2 icon-nav-size"></i> <span class="span-va">Materias</span></a></li>
       <li class="main-nav-pad"><a href="validarcalificaciones_directivo.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificaciones</span></a></li>
@@ -107,11 +100,11 @@
       <li class="no-padding main-nav-pad ">
         <ul class="collapsible collapsible-accordion">
           <li>
-            <a class="collapsible-header"><i class="icon-linear-graph icon-nav-size"></i> <span class="span-va">Reportes</span></a>
+            <a class="collapsible-header active"><i class="icon-linear-graph icon-nav-size"></i> <span class="span-va">Reportes</span></a>
             <div class="collapsible-body">
               <ul>
-                <li class=""><a href="reportes_directivo.html">Generar</a></li>
-                <li><a href="configurar-reportes_directivo.html">Configurar</a></li>
+                <li><a href="reportes_directivo.html">Generar</a></li>
+                <li class="active"><a href="configurar-reportes_directivo.html">Configurar</a></li>
               </ul>
             </div>
           </li>
@@ -121,71 +114,113 @@
  </header>
  <!-- startMain content--> 
 
- <main> <!-- startMain content-->   
+  <main><!-- startMain content-->   
 <div class="container fadeIn animated">
-  <div class="row">
 
-    <div class="col s12 m12 l12">
-        <div class="row">
-          <div class="col s10 m10 l10">
-            <h4 class="header">Crear y asignar usuarios</h4>
-          </div>
-        </div>
-        <div class="row">
-                <div class="input-field col s12 m6 l6">
-                    <div class="input-field col s12 m6 l12">
-                        <input  id="nombre_inst" type="text" class="validate">
-                        <label for="nombre_inst" class="">Nombre del Grupo</label>    
-                    </div>
-                    <div class="input-field col s12 m6 l12">
-                        <input id="nombre_inst" type="text" class="validate">
-                        <label for="nombre_inst" class="">Nombre de usuario</label>  
-                        <a href="#" class=" btn-xsmall btn-xsmall-fix waves-effect waves-light">Agregar al grupo</a> 
-                    </div>
-              </div>
-        
-          <div class="col s12 m12 l6">
-              <div class="panel panel-grupos center-align">
-                <h5>Grupo: <span><strong></strong></span></h5>
-                <h6>Usuarios: <span><strong></strong></span> </h6>
-                <a href="#" class="btn-flat waves-effect waves-light">Guardar</a>
-              </div>
-          </div>
-
-          
-        </div>
-
-
-          <div class="row">
-            <div class="col s12 mar-top-soft">
-                <ul class="collection">
-                  <li class="collection-item"><a href="#"><span>Ejemplo de usuario luego de ser agregado</span></a><a href="#" data-position="left" data-delay="25" data-tooltip="Eliminar" class="coll-btn-fix secondary-content tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-trash"></i></a>
-                  </li>
-
-
-                </ul>
-              
-            </div>
-          </div>
-
-    </div><!--  End Tables Section  -->
-  <div class="row">
-
-    <div class="col s12 m12 l12 mar-top-soft">
-        <ul class="pagination pagi-pad">
-              <li class="disabled"><a href="under-construction.html"><i class="icon-linear-chevron-left"></i></a></li>
-              <li class="active"><a href="under-construction.html">1</a></li>
-              <li class="waves-effect"><a href="under-construction.html">2</a></li>
-              <li class="waves-effect"><a href="under-construction.html">3</a></li>
-              <li class="waves-effect"><a href="under-construction.html">4</a></li>
-              <li class="waves-effect"><a href="under-construction.html">5</a></li>
-              <li class="waves-effect"><a href="under-construction.html"><i class="icon-linear-chevron-right"></i></a></li>
-            </ul>
+    <div class="row">
+              <div class="col s10 m10 l10">
+          <h4 class="header">Configuración de reportes por rol</h4>   
+        </div> 
     </div>
+
+  <div class="row mar-top-soft">
+            <h5 class="header">Docente</h5>   
+            <div class="col s12 mar-top-soft">
+                <div class="row">
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test6" class="filled-in"/>
+                                <label for="test6"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Asistencia</h5>
+                      </div>
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test7" class="filled-in"/>
+                                <label for="test7"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Calificaciones</h5>
+                      </div>
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test8" class="filled-in"/>
+                                <label for="test8"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Convicencia</h5>
+                      </div>
+
+                </div><!--  End row  --> 
+            </div>
   </div>
-</div>
-</div>
-  </main><!-- end Main content-->   
+
+    <div class="row">
+        <div class="col s12 m12 l12">
+        <div class="divider mar-bot-top"></div>
+          <h5 class="header">Padre</h5>      
+        </div> 
+    </div>
+            <div class="col s12 mar-top-soft">
+                <div class="row">
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test11" class="filled-in"/>
+                                <label for="test11"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Asistencia</h5>
+                      </div>
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test12" class="filled-in"/>
+                                <label for="test12"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Calificaciones</h5>
+                      </div>
+                      <div class="col s2 m1 l1 mar-top-fix">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test13" class="filled-in"/>
+                                <label for="test13"></label>
+                              </p>
+                          </form>
+                    </div>
+                      <div class="col s10 m2 l3 mar-top-fix">
+                        <h5 class="header">Convicencia</h5>
+                      </div>
+
+                </div><!--  End row  --> 
+            </div>
+
+
+
+
+  <div class="row">
+      <div class="col s12 m12 l12 center-align mar-top"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Guardar</a></div>
+  </div>
+ </div>
+</div>   <!-- end container-->  
+
+
+ </main><!-- end Main content--> 
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -203,7 +238,6 @@
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
-
 
   </body>
 </html>
