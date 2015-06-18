@@ -17,13 +17,13 @@
     <!-- CSS-->
     <link href="css/prism.css" rel="stylesheet">
     <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    
+    <link href="css/animate.css" rel="stylesheet">
     
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
 
    
   </head>
-<body>
+  <body>
 
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
@@ -62,91 +62,47 @@
  <!-- Main nav -->   
 
  <nav class="main-nav">
-  <div class="main-nav-wrapper">    
+
+  <div class="main-nav-wrapper">
+    
     <ul class="hide-on-med-and-down">
       <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-city icon-nav-size"></i><br><span>Instituciones</span></a></li>
       <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-users icon-nav-size"></i> <br><span>Usuarios</span></a></li>
     </ul>
   </div>
+
  </nav>
 
  <!-- startMain content-->   
 <div class="container">
-  <div class="row">
-        <div class="col s10 m10 l10">
-          <h3 class="header">Nueva institución</h3>              
-        </div>  
-  </div> 
-  <div class="row">
-        <div class="input-field col s12 m6 l6">
-            <input id="nombre_inst" type="text" class="validate">
-            <label for="nombre_inst">Nombre de la institución</label>    
-        </div>
-          <div class="input-field col s12 m6 l6">
-            <input id="email" type="text" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Teléfono</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Nombre del apoderado</label>
-        </div> 
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l6">
-        <form action="#">
-            <div class="file-field input-field">
-              <input class="file-path validate" type="text"/>
-              <label for="logo_img">Logotipo de la institución</label>
-              <div class="btn-large">
-                <span>Elegir archivo</span>
-                <input type="file" />
-              </div>
-           </div>
-        </form>
+  <div class="row mar-top-soft">
+
+    <div class="col s12 m8 l8">
+    <h3 class="header">Belgrano Day School</h3>
+    <h5 class="header">Nivel secundario</h5>
     </div>
-  </div>
-    <div class="row">
-      <div class="col s12 m12 l12 card-panel orange lighten-5 mar-top">
-          <div class="col s1 m1 l1">
-              <form action="#">
-                <p class="right-align">
-              <input type="checkbox" id="test5" />
-              <label for="test5"></label>
-                </p>
-              </form>
-            </div>
-            <div class="col s11 m11 l11"><h5>¿La institución posee más de un establecimiento?</h5></div>
-      </div> 
-    </div>
+    <div class="col s12 m4 l4 center-align">
+    <img src="images/belgranods.jpg" alt="as" class="inst-thumb mar-top-soft">
+    </div><!--  End Tables Section  -->
 
-  <div class="row">
-        <div class="input-field col s12 m6 l6">
-            <input disabled id="nombre_inst" type="text" class="validate">
-            <label for="nombre_inst">Nombre del establecimiento</label>    
+</div>
+<div class="divider mar-top-soft"></div>
+      <div class="row mar-top-soft">
+        <div class="col s12 m6 l6">
+        <h5 class="header">Apoderado: <span class="span-s"> Walter Muscolo</span></h5>
+        <h5 class="header">E-mail: <span class="span-s"> bdayschool@educa.edu.ar</span></h5>
+        <h5 class="header">Teléfono: <span class="span-s"> bdayschool@educa.edu.ar</span></h5>
+        <h5 class="header">Establecimientos: <span class="span-s"> 0</span></h5>
         </div>
-          <div class="input-field col s12 m6 l6">
-            <input disabled id="email" type="text" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Teléfono</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Nombre del apoderado</label>
-        </div> 
-  </div>
-  <div class="row">
-      <div class="col s12 center-align"><a href="#" class="btn-large waves-effect waves-light center-align">Guardar</a></div>
-  </div>
+        <div class="col s12 m6 l6">
+        <h5 class="header">Cantidad de estudiantes: <span class="span-s"> 456</span></h5>
+        <h5 class="header">Directivos: <span class="span-s"> 3</span></h5>
+        <h5 class="header">Profesores: <span class="span-s"> 21</span></h5>
+        <h5 class="header">Bedeles: <span class="span-s"> 0</span></h5>
 
-  </div>   <!-- end container-->  
-
+        </div>
+    </div>
+</div>
  <!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
@@ -172,26 +128,5 @@
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
 
-    <!-- MAIN JS -->
-     <script src="js/main.js"></script>
-
-
-    <!-- Twitter Button -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-    <!-- Google Plus Button-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-    <!--  Google Analytics  -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56218128-1', 'auto');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-    </script>
   </body>
 </html>

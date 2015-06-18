@@ -140,6 +140,10 @@
       belowOrigin: false // Displays dropdown below the button
     }
   );
+    $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+    
 
 
   }); // end of document ready
