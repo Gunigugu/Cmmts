@@ -8867,9 +8867,31 @@ small {
   transition: .2s ease-out;
   cursor: pointer;
     padding: 0px 8px 0px 8px !important; }
-  .btn:hover, .btn-small:hover {
+.btn-xsmall {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #DB8B63;
+  background-color: transparent;
+  border: 1px solid #F39A6E;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+    padding: 5px 10px 5px 10px !important;
+    margin-right: 5px; }
+
+  .btn:hover:hover, .btn-small:hover, .btn-xsmall:hover {
     background-color: #F39A6E;
     color: #fff; }
+
+.mistake  {
+    color: #EDC5B1 !important;
+    border: 1px solid #EDC5B1 !important; }
+
 
 .btn-floating {
   display: inline-block;
@@ -9182,7 +9204,7 @@ a.waves-effect .waves-ripple {
 .collapsible:hover {
   
   
-  margin: 1.4rem 0 1rem 0; }
+  /*margin: 1.4rem 0 1rem 0;*/ }
 
 .collapsible-header {
   display: block;
@@ -9199,6 +9221,15 @@ a.waves-effect .waves-ripple {
   transition: .25s ease; }
   .collapsible-header:hover {
   color: #F39A6D;
+}
+  .collapsible-header:active {
+  color: #F39A6D !important;
+}
+  .collapsible-header:focus {
+  color: #F39A6D !important;
+}
+  .collapsible-header:visited {
+  color: #F39A6D !important;
 }
   .collapsible-header i {
     width: 2rem;
@@ -11278,6 +11309,17 @@ nav ul li:hover, nav ul li.active {
   color: #3C3C3B;
   font-weight: 300; }
 
+.h-h3 {
+  color: #3C3C3B;
+  font-weight: 300; }
+
+.h-h3 i {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  display: block;
+  float: left;
+  margin-right: 1rem; }
+
 .caption {
   font-size: 1.25rem;
   font-weight: 300;
@@ -11907,6 +11949,9 @@ body.parallax-demo footer {
 
 .pad-top-disci {
   padding-top: 0.5rem !important;
+}
+.pad-all-edit {
+  padding: 1rem !important;
 } 
 
 .main-nav
@@ -12205,6 +12250,7 @@ body.parallax-demo footer {
   float: left;
   text-align: center;
   margin-right: 1rem;}
+
 
 .widget-events {
     }
