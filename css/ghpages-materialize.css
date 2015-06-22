@@ -12218,7 +12218,17 @@ body.parallax-demo footer {
   margin-bottom: 15px;
   background-color: #fff;
   border: 1px solid #cacaca;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
   }
+.panel:hover {
+  
+  border: 1px solid #F39A6D;
+  }
+
 
 .panel-default > .panel-heading {
   color: #575756;
@@ -12251,8 +12261,22 @@ body.parallax-demo footer {
   text-align: center;
   margin-right: 1rem;}
 
+.widget-link  {
+    color: #575756 !important;
+    
+    }
 
-.widget-events {
+.widget-link a {
+    color: #575756 !important;
+    -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+    }
+
+.widget-link a:hover {
+    color: #F39A6D !important;
     }
 
 .widget-events-date {
@@ -12356,4 +12380,11 @@ body.parallax-demo footer {
       
       border-bottom: 1px solid #F39A6D !important;
     }
-  
+
+.error-msg {
+      
+  color: #fff;
+  background-color: #EE8277;
+  padding: 10px;
+  border-radius: 35px;
+    }
