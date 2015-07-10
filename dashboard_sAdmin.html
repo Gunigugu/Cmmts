@@ -23,8 +23,8 @@
 
    
   </head>
-<body>
- <header>
+  <body>
+<header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
 <ul id="dropdown1" class="dropdown-content drop-user">   
@@ -62,95 +62,57 @@
  <!-- Main nav -->   
 
  <nav class="main-nav">
-  <div class="main-nav-wrapper">    
+
+  <div class="main-nav-wrapper sa-nav">
+    
     <ul class="hide-on-med-and-down">
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-history icon-nav-size"></i><br><span>Inicio</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-city icon-nav-size"></i><br><span>Instituciones</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-history icon-nav-size"></i><br><span>Inicio</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#" ><i class="icon-linear-city icon-nav-size"></i><br><span>Instituciones</span></a></li>
       <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-users icon-nav-size"></i> <br><span>Usuarios</span></a></li>
     </ul>
   </div>
+
  </nav>
  </header>
- 
-  <main><!-- startMain content-->   
-<div class="container">
-  <div class="row mar-top-soft">
+ <main>
+ <div class="container mar-bot-xl">
+    <div class="row mar-top-soft">
         <div class="col s10 m10 l10">
-          <h3 class="header">Nueva institución</h3>              
-        </div>  
-  </div> 
-  <div class="row">
-        <div class="input-field col s12 m6 l6">
-            <input id="nombre_inst" type="text" class="validate">
-            <label for="nombre_inst">Nombre de la institución</label>    
+          <h3 class="header">Inicio</h3>
+                 
         </div>
-          <div class="input-field col s12 m6 l6">
-            <input id="email" type="email" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input id="tel" type="tel" class="validate">
-            <label for="tel">Teléfono</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input id="tel" type="text" class="validate">
-            <label for="tel">Nombre del apoderado</label>
-        </div> 
   </div>
-  <div class="row">
-    <div class="col s12 m6 l6">
-        <form action="#">
-            <div class="file-field input-field">
-              <input class="file-path validate" type="text"/>
-              <label for="logo_img">Logotipo de la institución</label>
-              <div class="btn-large">
-                <span>Elegir archivo</span>
-                <input type="file" />
-              </div>
-           </div>
-        </form>
-    </div>
-  </div>
-    <div class="row">
-      <div class="col s12 m12 l12 card-panel orange lighten-5 mar-top">
-          <div class="col s1 m1 l1">
-              <form action="#">
-                <p class="right-align">
-              <input type="checkbox" id="test5" />
-              <label for="test5"></label>
-                </p>
-              </form>
+
+  <div clasS="row mar-top-soft">
+
+      <div class="col s12 m6 l6 center-align"> <!-- startWidget 1--> 
+          <div class="row ">
+            <div class="col s12">
+              <h1><i class="icon-linear-apartment sa-d-i"></i>  51</h1><h5>Instituciones</h5>
+
+
+
             </div>
-            <div class="col s11 m11 l11"><h5>¿La institución posee más de un establecimiento?</h5></div>
-      </div> 
-    </div>
+          </div>
+    </div><!-- endWidget 1-->
 
-  <div class="row">
-        <div class="input-field col s12 m6 l6">
-            <input disabled id="nombre_inst" type="text" class="validate">
-            <label for="nombre_inst">Nombre del establecimiento</label>    
-        </div>
-          <div class="input-field col s12 m6 l6">
-            <input disabled id="email" type="text" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Teléfono</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Nombre del apoderado</label>
-        </div> 
+
+      <div class="col s12 m6 l6 center-align"> <!-- startWidget 1--> 
+          <div class="row ">
+            <div class="col s12">
+              <h1><i class="icon-linear-users2 sa-d-i"></i>  7650</h1><h5>Alumnos inscriptos</h5>
+
+
+
+            </div>
+          </div>
+    </div><!-- endWidget 1-->
+
+
   </div>
-  <div class="row">
-      <div class="col s12 center-align"><a href="#" class="btn-large waves-effect waves-light center-align">Guardar</a></div>
-  </div>
+ </div>
+ </main>
 
-  </div>   <!-- end container-->  
-
-
- </main><!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -160,6 +122,12 @@
           </div>
 </footer>
 
+      
+       
+    
+
+
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
@@ -167,6 +135,7 @@
     <script src="js/jquery.timeago.min.js"></script>  
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
-    <script src="js/init.js"></script>   
+    <script src="js/init.js"></script>
+
   </body>
 </html>

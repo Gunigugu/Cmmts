@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Communitas - Comunidad educativa virtual ">
+    <title>Communitas</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!--  Full Calendar-->
+        <!-- <link rel="stylesheet" href="css/fullcalendar.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/fullcalendar.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <!--[if lt IE 9]>
+        <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="js/fullcalendar.js"></script>
+    <script src='js/es.js'></script>
+    
+    
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+
+   
+  </head>
+<body>
+
+ <!-- Fixed nav -->    
+<div class="navbar-fixed">
+<ul id="dropdown1" class="dropdown-content drop-user">   
+  <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
+  <li><a href="#!" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content drop-notification">
+  <span class="circle dot"></span>
+  <div clasS="notifi"><h6>Notificaciones</h6></div>
+  <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
+</ul>
+<ul id="dropdown3" class="dropdown-content drop-messages">
+  <span class="circle dot"></span>
+  <div clasS="notifi"><h6>Mensajes</h6></div>
+  <li><a href="#!" class="t-s"><b>Don Mota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s"><b>Marta Chota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-logo-s.png"></a>
+
+    <ul class="right hide-on-med-and-down">
+
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
+      <li><img src="images/student-avatar-m.png" alt="as" class="avatar-nav-top circle1"></li>
+
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Juan Carlos<i class="icon-linear-chevron-down right"></i></a></li>
+    </ul>
+  </div>
+</nav>
+</div> 
+ <!-- Main nav -->   
+
+  <!-- Fixed nav anti bullyng -->   
+
+ <nav class="main-nav">
+  <div class="main-nav-wrapper student-nav">    
+    <ul class="hide-on-med-and-down">
+      <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-history icon-nav-size"></i><br><span>Inicio</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-clipboard-text icon-nav-size"></i> <br><span>Asistencia</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-list3 icon-nav-size"></i> <br><span>Calificaciones</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-calendar-full icon-nav-size"></i> <br><span>Calendario</span></a></li>
+      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-neutral icon-nav-size"></i> <br><span>Disciplina</span></a></li>
+      <li class="main-nav-pad-ab center-align"><a href="#" class="btn-xsmall waves-effect waves-light"><i class="icon-linear-notification icon-nav-size-ab"></i> Anti Bullyng</a></li>
+      
+    </ul>
+  </div>
+ </nav>
+ 
+ <!-- startMain content--> 
+
+ <div class="container">
+  <div class="row">
+        <div class="col s10 m10 l10">
+          <h3 class="header">Inicio</h3>
+                 
+        </div>
+  </div>
+    
+
+    <div class="row mar-top-soft">
+
+    <div id="test1" class="col s12 fadeIn animated"> <!-- start student 1--> 
+        <div class="col s12 m6 l2"> <!-- startWidget 4--> 
+          <div class="row">
+            <div class="col s12">
+                  <div class="panel-default"> 
+                    <div class="panel-body-school normalh center-align">
+                    <img src="images/mb.png" alt="as" class="inst-thumb">
+                    <h6 class="school-style">Colegio Manuel Belgrano</h6>
+                    <h6 class="">Nivel secundario</h6> 
+
+                        <div class="col s4">
+
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div><!-- endWidget 4--> 
+    <div class="col s12 m6 l4"> <!-- startWidget 1--> 
+          <div class="row ">
+            <div class="col s12">
+
+                  <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col s12 widget-link">
+                            <a href="#"> <h5 href="#" class="panel-title"><i class="icon-linear-calendar-insert"></i> Próximas actividades</h5></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                    <div class="panel-body normalh">
+                        <div class="col s12">
+                            <h6><span class="widget-events-date">11 Jun</span> Reunion de padres</h6>
+                            <div class="divider"></div>
+                            <h6><span class="widget-events-date">04 Jul</span>  Examen de Geografía</h6>
+                            <div class="divider"></div>
+                            <h6><span class="widget-events-date">29 Jul</span>  Examen de Matemática</h6>
+                            <div class="divider"></div>
+                            <h6><span class="widget-events-date">9 ago</span>  Examen de Inglés</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div><!-- endWidget 1-->
+        <div class="col s12 m6 l3"> <!-- startWidget 2--> 
+          <div class="row">
+            <div class="col s12">
+                  <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col s12 widget-link">
+                            <a href="#"><h5 class="panel-title"><i class="icon-linear-clipboard-text"></i> Asistencia</h5></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                    <div class="panel-body normalh center-align ">
+                      <div class="col s12 m12 l12"> <div class="row">
+                        <div class="col s6 m6 l6">
+                        
+                        <h1 class="asist-m">3<span class="asist-widget-span">/25</span></h1>
+                        <h6 class="">Inasistencias</h6>
+                        </div>
+                        <div class="col s6 m6 l6">
+                        
+                        <h1 class="asist-m">4<span class="asist-widget-span-lates"> (1 inasist.)</span></h1>
+                        <h6 class="">Llegadas tarde</h6>
+                        </div></div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div><!-- endWidget 2--> 
+        <div class="col s12 m6 l3"> <!-- startWidget 3--> 
+          <div class="row">
+            <div class="col s12">
+                  <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col s12 widget-link">
+                            <a href="#"><h5 class="panel-title"><i class="icon-linear-news"></i> Novedades</h5></a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="panel-body normalh">
+                        <div class="col s12">
+
+                            <h6><i class="icon-linear-wink news-i news-i-g"></i><span class="widget-news"> 8</span> Complementos </h6>
+                            
+                            <h6><i class="icon-linear-neutral news-i news-i-n"></i><span class="widget-news"> 5</span> Neutrales </h6>
+                            
+                            <h6><i class="icon-linear-mad news-i news-i-b"></i><span class="widget-news"> 3</span> Sanciones </h6>
+                            
+                            <h6><i class="icon-linear-envelope news-i news-i-c"></i><span class="widget-news"> 8</span> Comunicados</h6>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div><!-- endWidget 3--> 
+
+       <div class="col s12 mar-top-soft">
+      <h5 class="panel-title"><i class="icon-linear-history"></i> Calendario</h5>
+      
+             
+         <div id="calendar"></div>
+      </div> 
+
+    </div><!-- end student 1--> 
+
+    
+  </div>
+
+  </div>
+  
+  
+
+
+
+
+ <!-- end Main content-->   
+<footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Communitas - Comunidad educativa virtual
+            <a class="grey-text text-lighten-4 right" href="#!">Ayuda</a>
+            </div>
+          </div>
+</footer>
+
+      
+       
+    
+
+
+
+    <!--  Scripts-->
+    
+    </script>
+
+    <script src="js/jquery.timeago.min.js"></script>  
+    <script src="js/prism.js"></script>
+    <script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'agendaWeek,agendaDay'
+                },
+                defaultDate: '2015-07-01',
+                defaultView: 'agendaWeek',
+                events: [
+                    {
+                        title: 'Matematica',
+                        start: '2015-07-01T09:30:00',
+                        end: '2015-07-01T10:45:00'
+                    },
+                    {
+                        title: 'Geografía',
+                        start: '2015-07-01T11:00:00',
+                        end: '2015-07-01T12:20:00'
+                    },
+                     {
+                        title: 'Historia',
+                        start: '2015-07-01T13:20:00',
+                        end: '2015-07-01T14:30:00'
+                    },
+
+                    {
+                        title: 'Recreo',
+                        start: '2015-07-01T10:45:00',
+                        end: '2015-07-01T11:00:00'
+                    },
+                    {
+                        title: 'Lengua',
+                        start: '2015-07-03T08:30:00',
+                        end: '2015-07-03T9:30:00'
+                    },
+                    {
+                        title: 'Excursion a La Serenisima',
+                        start: '2015-07-02T08:30:00',
+                        end: '2015-07-02T12:30:00',
+                        url: '#'
+                    }
+                ]
+            })
+        });
+    </script>
+
+    <script> $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });</script>
+
+  </body>
+</html>
