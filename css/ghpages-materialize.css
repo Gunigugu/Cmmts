@@ -2119,28 +2119,75 @@ ul.staggered-list li {
   transform-origin: 0 50%; }
 
 /*********************
-  Media Query Classes
+  Media Query Classes and clases that works only on media
 **********************/
+.sch-mb {
+    margin-bottom: 0rem; }
+.normalh-c {
+    }
+ .pad-mod {
+  padding: 10px 15px 10px 15px !important;
+    }
+ .pad-mod2 {
+  padding: 0 0.75rem !important;
+    }
+  
+
+
 @media only screen and (max-width : 600px) {
   .hide-on-small-only, .tabs-wrapper, .hide-on-small-and-down {
     display: none !important; }
 
   .border-r {
     border: 0px solid red !important; }
-
+  .fix {
+    margin-right: 0px !important; }
+  .sch-mb {
+    margin-bottom: 3rem !important; }
+  .pad-mod {
+  padding: 0px !important;}
+       .pad-mod2 {
+  padding: 0 0.5rem  !important;
+    }
+  
    }
 
 @media only screen and (max-width : 992px) {
   .hide-on-med-and-down {
-    display: none !important; } }
+    display: none !important; }
+   }
+     }
 
 @media only screen and (min-width : 601px) {
   .hide-on-med-and-up {
-    display: none !important; } }
+    display: none !important;
+     }
+  .fix {
+    margin-right: 0px !important; }
+    .sch-mb {
+    margin-bottom: 3rem !important; }
+    .pad-mod {
+  padding: 0px !important;
+    }
+     .pad-mod2 {
+  padding: 0 0.5rem  !important;
+    }
+      }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .hide-on-med-only {
-    display: none !important; } }
+    display: none !important; }
+  .fix {
+    margin-right: 0px !important; }
+    .sch-mb {
+    margin-bottom: 3rem !important; }
+    .pad-mod {
+  padding: 0px !important;
+    }
+         .pad-mod2 {
+  padding: 0 0.5rem  !important;
+    }
+   }
 
 @media only screen and (min-width : 993px) {
   .hide-on-large-only {
@@ -11460,10 +11507,7 @@ a.button-collapse.top-nav {
   }
 
 
-.drop-user {
-  
-  margin-left: 0px !important;
-}
+
 
 
 
@@ -12192,9 +12236,10 @@ vertical-align: middle;}
 
 .drop-user {
   width: 200px !important;
-  margin-left: -120px;
 }
-
+.fw-4{
+  font-weight: 400 !important;
+}
 .du {
   background-color: #fff;
 }
