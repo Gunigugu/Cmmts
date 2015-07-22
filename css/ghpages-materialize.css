@@ -12709,6 +12709,8 @@ vertical-align: middle;}
 .fix {
     margin-right: 240px;
 }
-
-
+  
+.new-student {
+    background-color: rgba(253, 235, 226, 0.68) !important;
+}
 
