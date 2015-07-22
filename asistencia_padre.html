@@ -26,10 +26,19 @@
    
   </head>
 <body>
-
+<header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
-<ul id="dropdown1" class="dropdown-content drop-user">   
+
+<ul id="dropdown1" class="dropdown-content drop-user-f">   
+  <div clasS="notifi"><h6>Seleccionar hijo</h6></div>
+  <li><a href="#!" class="t-s duactive"><img src="images/student-avatar-f.png" alt="as" class="avatar-nav-drop circle1"> Antonella peacecraft</a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s "><img src="images/student-avatar-m.png" alt="as" class="avatar-nav-drop circle1"> Juan Peacecraft</a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s "><img src="images/student-avatar-f.png" alt="as" class="avatar-nav-drop circle1"></i> Relena Peacecraft</a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
@@ -52,45 +61,80 @@
 </ul>
 <nav>
   <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-logo-s.png"></a>
-    <ul class="right hide-on-med-and-down">
+  <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
+    
+    <ul class="breadcrumb left hide-on-small-only">
+      <li><a href="#" class="b-focus">Asistencia</a></li>
+    </ul>
+    <ul class="right fix">
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
-      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Sebastian Peacecraft<i class="icon-linear-chevron-down right"></i></a></li>
+      
+
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Sr Peacecraft<i class="icon-linear-chevron-down right"></i></a></li>
     </ul>
+  </div>
   </div>
 </nav>
 </div> 
  <!-- Main nav -->   
 
- <nav class="main-nav">
-  <div class="main-nav-wrapper father-nav">    
-    <ul class="hide-on-med-and-down">
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-history icon-nav-size"></i><br><span>Inicio</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-clipboard-text icon-nav-size"></i> <br><span>Asistencia</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-list3 icon-nav-size"></i> <br><span>Calificaciones</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-calendar-full icon-nav-size"></i> <br><span>Calendario</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-neutral icon-nav-size"></i> <br><span>Disciplina</span></a></li>
-    </ul>
-  </div>
- </nav>
- 
+  <!-- Fixed nav anti bullyng -->   
+
+
+      <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
+            </li>
+         <li class="main-nav-pad "><a href="#"><i class="icon-linear-history icon-nav-size"></i><span>Inicio</span></a></li>
+      <li class="main-nav-pad active"><a href="#" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span>Asistencia</span></a></li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-list3 icon-nav-size"></i> <span>Calificaciones</span></a></li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-calendar-full icon-nav-size"></i> <span>Calendario</span></a></li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-calendar-user icon-nav-size"></i> <span>Convivencia</span></a></li>
+      
+
+      </ul>
+ </header>
  <!-- startMain content--> 
 <main>
- <div class="container">
+ <div class="container fadeIn animated">
   <div class="row">
-        <div class="col s10 m10 l10">
-          <h3 class="header">Asistencia</h3>
-                 
+        <div class="col s12 m6 l6">
+          <h3 class="header">Planilla de asistencias</h3>
+        </div>
+        <div class="col s12 m6 l6">
+          <h5 class="right-ch"><img src="images/student-avatar-f.png" alt="as" class="avatar-main circle1"> Antonella Peacecraft</h5>    
         </div>
   </div>
     
 
     <div class="row mar-top-soft">
 
-    <div class="col s12  fadeIn animated"> <!-- start student 1--> 
+    <div class="col s12 "> 
+                 <div class="col s12 m12 l12"> <!-- startWidget 2--> 
+                      <div class="row">
+                        <div class="col s12">
+                              <div class="">
+
+                                <div class="panel-body2 center-align">
+                                  <div class="col s12 m12 l12"> <div class="row">
+                                    <div class="col s12 m6 l6 border-r">
+                                    
+                                    <h1 class="asist-m">3 <span class="asist-widget-span-in">Inasistencias </span></h1>
+                                     <h6>De un total de 25</h6>
+                                    </div>
+                                    <div class="col s12 m6 l6">
+                                    
+                                    <h1 class="asist-m">4<span class="asist-widget-span-in"> Legadas tarde</span></h1>
+                                    <h6 class="">4 tardes equivalen a 1 falta</h6>
+                                    </div></div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                </div><!-- endWidget 2-->  
         
-        <div class="col s12 m12 l9"> <!-- start table 2--> 
+        <div class="col s12 m12 l12 mar-bot-top"> <!-- start table 2--> 
           <div class="row">
             <div class="col s12">
               <table class="striped">
@@ -129,13 +173,7 @@
                       <a data-position="top" data-delay="25" data-tooltip="Cargar justificación" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-paperclip"></i></a>
                     </td>
                   </tr>
-                  <tr>
-                    <td>06/05/2015</td>
-                    <td><span class="new badge">FERIADO</span></td>
-                    <td></td>
-                    
-                    <td>
-                  </tr>
+
                   <tr>
                     <td>05/05/2015</td>
                     <td><i class="icon-linear-cross2 cross-r"></i></td>
@@ -160,41 +198,7 @@
 
             </div>
           </div>
-    </div><!-- end table 2--> 
-    
-        <div class="col s12 m12 l3"> <!-- startWidget 2--> 
-          <div class="row">
-            <div class="col s12">
-                  <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col s12 widget-link">
-                            <a href="#"><h5 class="panel-title"><i class="icon-linear-clipboard-text"></i> Asistencia</h5></a>
-                        </div> 
-                    </div>
-                </div>
-                    <div class="panel-body normalh center-align ">
-                      <div class="col s12 m12 l12"> <div class="row">
-                        <div class="col s6 m6 l6">
-                        
-                        <h1 class="asist-m">3<span class="asist-widget-span">/25</span></h1>
-                        <h6 class="">Inasistencias</h6>
-                        </div>
-                        <div class="col s6 m6 l6">
-                        
-                        <h1 class="asist-m">4<span class="asist-widget-span-lates"> (1 falta)</span></h1>
-                        <h6 class="">Llegadas tarde</h6>
-                        </div></div>
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-    </div><!-- endWidget 2--> 
-        
-
-
-
+      </div><!-- end table 2--> 
     </div><!-- end student 1--> 
    </div>
   </div>

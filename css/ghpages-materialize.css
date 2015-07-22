@@ -2149,6 +2149,9 @@ ul.staggered-list li {
        .pad-mod2 {
   padding: 0 0.5rem  !important;
     }
+  .right-ch {
+  float: left !important;
+     }
   
    }
 
@@ -2172,6 +2175,9 @@ ul.staggered-list li {
      .pad-mod2 {
   padding: 0 0.5rem  !important;
     }
+    .right-ch {
+  float: left !important;
+     }
       }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
@@ -2579,6 +2585,10 @@ span.badge {
 .right {
   float: right !important;
      }
+.right-ch {
+  float: right;
+     }
+
 
 .no-select, input[type=range], input[type=range] + .thumb {
   -webkit-touch-callout: none;
@@ -8960,12 +8970,12 @@ small {
   -ms-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
-    padding: 5px 15px 5px 15px !important;
+    
     margin-right: 5px; }
 
   .btn:hover:hover, .btn-small:hover, .btn-xsmall:hover {
-    background-color: #F39A6E;
-    color: #fff; }
+    background-color: #F39A6E !important;
+    color: #fff !important; }
 
 .mistake  {
     color: #EDC5B1 !important;
@@ -12237,11 +12247,19 @@ vertical-align: middle;}
 .drop-user {
   width: 200px !important;
 }
+.drop-user-f {
+  width: 260px !important;
+}
+
 .fw-4{
   font-weight: 400 !important;
 }
 .du {
   background-color: #fff;
+}
+
+.duactive {
+  background-color: #fdebe2;
 }
 
 .drop-notification {
@@ -12277,6 +12295,21 @@ vertical-align: middle;}
         
         display: inline-block;
         margin: 15px -5px 0px 20px; }
+
+        .avatar-nav-drop {
+        
+        height: 22px;
+        overflow: hidden;
+        vertical-align: sub;
+        display: inline-block;
+        margin: 0px 5px 0px 0px; }
+        .avatar-main {
+        
+        height: 32px;
+        overflow: hidden;
+        vertical-align: sub;
+        display: inline-block;
+        margin: 20px 10px 0px 0px; }
 
 .inst-thumb {
         
@@ -12447,7 +12480,7 @@ vertical-align: middle;}
 .widget-califications {
   font-weight: 800;
   text-transform: uppercase;
-  border-right: 1px solid #cacaca;
+  border-left: 1px solid #cacaca;
   padding: 0px 0.4rem 0px 0.4rem;
   margin-right: 0.4rem;
     font-size: 1em;
