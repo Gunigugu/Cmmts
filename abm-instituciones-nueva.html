@@ -24,11 +24,13 @@
    
   </head>
 <body>
- <header>
+<header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
+
 <ul id="dropdown1" class="dropdown-content drop-user">   
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
+  
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
   <span class="circle dot"></span>
@@ -50,33 +52,45 @@
 </ul>
 <nav>
   <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-logo-s.png"></a>
-    <ul class="right hide-on-med-and-down">
+  <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
+    
+    <ul class="breadcrumb left hide-on-small-only">
+      <li><a href="#">Instituciones</a></li>
+      <li><i class="icon-linear-chevron-right bread-i"></i></li>
+      <li><a href="#" class="b-focus">Nueva institución</a></li>
+    </ul>
+    <ul class="right fix">
+
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
-      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Super Admin<i class="icon-linear-chevron-down right"></i></a></li>
+      
+
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Juan Carlos<i class="icon-linear-chevron-down right"></i></a></li>
     </ul>
+  </div>
   </div>
 </nav>
 </div> 
  <!-- Main nav -->   
 
- <nav class="main-nav">
-  <div class="main-nav-wrapper">    
-    <ul class="hide-on-med-and-down">
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-history icon-nav-size"></i><br><span>Inicio</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#" class="active"><i class="icon-linear-city icon-nav-size"></i><br><span>Instituciones</span></a></li>
-      <li class="main-nav-pad center-align"><a href="#"><i class="icon-linear-users icon-nav-size"></i> <br><span>Usuarios</span></a></li>
-    </ul>
-  </div>
- </nav>
+  <!-- Fixed nav anti bullyng -->   
+
+
+      <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
+            </li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-history icon-nav-size"></i> <span>Inicio</span></a></li>
+      <li class="main-nav-pad active"><a href="#"><i class="icon-linear-city icon-nav-size"></i> <span>Instituciones</span></a></li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-users icon-nav-size"></i> <span>Usuarios</span></a></li>
+
+      </ul>
  </header>
  
   <main><!-- startMain content-->   
 <div class="container">
   <div class="row mar-top-soft">
         <div class="col s10 m10 l10">
-          <h3 class="header">Nueva institución</h3>              
+          <h3 class="header">Crear institución</h3>              
         </div>  
   </div> 
   <div class="row">
@@ -85,17 +99,9 @@
             <label for="nombre_inst">Nombre de la institución</label>    
         </div>
           <div class="input-field col s12 m6 l6">
-            <input id="email" type="email" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input id="tel" type="tel" class="validate">
-            <label for="tel">Teléfono</label>
-        </div> 
-        <div class="input-field col s12 m6 l6">        
-            <input id="tel" type="text" class="validate">
-            <label for="tel">Nombre del apoderado</label>
-        </div> 
+            <input id="tel" type="number" class="validate">
+            <label for="cuit" data-error="Este campo solo acepta valores numéricos" data-success="Correcto">C.U.I.T</label>         
+
   </div>
   <div class="row">
     <div class="col s12 m6 l6">
@@ -111,40 +117,83 @@
         </form>
     </div>
   </div>
-    <div class="row">
-      <div class="col s12 m12 l12 card-panel orange lighten-5 mar-top">
-          <div class="col s1 m1 l1">
-              <form action="#">
-                <p class="right-align">
-              <input type="checkbox" id="test5" />
-              <label for="test5"></label>
-                </p>
-              </form>
-            </div>
-            <div class="col s11 m11 l11"><h5>¿La institución posee más de un establecimiento?</h5></div>
-      </div> 
+    <div class="row mar-top">
+              <div class="col s10 m10 l10">
+          <h3 class="header">Datos de establecimiento</h3>              
+        </div> 
     </div>
 
   <div class="row">
         <div class="input-field col s12 m6 l6">
-            <input disabled id="nombre_inst" type="text" class="validate">
+            <input  id="nombre_inst" type="text" class="validate">
             <label for="nombre_inst">Nombre del establecimiento</label>    
         </div>
-          <div class="input-field col s12 m6 l6">
-            <input disabled id="email" type="text" class="validate">
-            <label for="email">Correo electrónico oficial</label>         
-        </div> 
-        <div class="input-field col s12 m6 l6">         
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Teléfono</label>
-        </div> 
+         <div class="input-field col s12 m6 l6">
+            <select>
+              <option value="" disabled selected>Seleccionar ciudad</option>
+              <option value="1">Buenos Aires</option>
+              <option value="2">Mar del Plata</option>
+              <option value="3">Río Grande</option>
+            </select>
+            
+          </div>
         <div class="input-field col s12 m6 l6">        
-            <input disabled id="nombre_apoderado" type="text" class="validate">
-            <label for="nombre_apoderado">Nombre del apoderado</label>
-        </div> 
+            <input  id="nombre_apoderado" type="text" class="validate">
+            <label for="nombre_apoderado">Dirección</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Código postal</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Longitud</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Latitud</label>
+        </div>
+
+        <div class="input-field col s12 m6 l6">        
+            <input  id="number" type="number" class="validate">
+            <label for="number">Código país</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="number" type="number" class="validate">
+            <label for="number">Código area</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="number" type="number" class="validate">
+            <label for="number">Teléfono</label>
+        </div>
+          <div class="input-field col s12 m6 l6">
+            <input  id="number" type="email" class="validate">
+            <label for="number">Correo electrónico oficial</label>         
+        </div>
+        <div class=" col s12 m6 l6"> 
+        <i class="icon-linear-calendar-full"></i>
+              <label for="birthdate" class="">Fecha de inaguración</label>
+            <input type="date" class="datepicker">
+
+        </div>
+        <div class="divider mar-bot-top col s12 m12 l12"></div>
+        <div class="col s12 m12 l12"> <h4 class="header">Importante!</h4><p class="header">Se deben completar correctamente la <strong>totalidad de faltas  para que un alumno se quede libre </strong> y la cantidad de <strong>llegadas tarde que equivalen a una falta.</strong></p>
+          <div class="input-field col s12 m6 l6">
+            <input  id="number" type="number" class="validate">
+            <label for="number" data-error="Incorrecto" data-success="Correcto">Total de faltas</label>         
+        </div>
+          <div class="input-field col s12 m6 l6">
+            <input  id="number" type="number" class="validate">
+            <label for="number" data-error="Incorrecto" data-success="Correcto">Cantidad de llegadas tarde que equivalen una falta</label>         
+        </div>
+        <div class="input-field col s12 mar-top-soft">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Observaciones</label>
+        </div>
   </div>
   <div class="row">
-      <div class="col s12 center-align"><a href="#" class="btn-large waves-effect waves-light center-align">Guardar</a></div>
+      <div class="col s12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Finalizar</a><a href="#" class="btn-large waves-effect waves-light center-align">Agregar otro establecimiento</a></div>
+
   </div>
 
   </div>   <!-- end container-->  
@@ -161,12 +210,22 @@
 </footer>
 
     <!--  Scripts-->
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
     <script src="js/jquery.timeago.min.js"></script>  
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
-    <script src="js/init.js"></script>   
+    <script src="js/init.js"></script>
+    <script>$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });</script>
+    <script>$(document).ready(function() {
+    $('select').material_select();
+  });</script>
+
+
   </body>
 </html>

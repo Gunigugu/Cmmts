@@ -18,22 +18,20 @@
     <link href="css/prism.css" rel="stylesheet">
     <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/animate.css" rel="stylesheet">
-
-    
-    
     
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
 
    
   </head>
-<body>
+  <body>
+
  <header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
 
 <ul id="dropdown1" class="dropdown-content drop-user">   
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
-  <li><a href="#!" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
+  
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
   <span class="circle dot"></span>
@@ -58,12 +56,17 @@
   <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
     
     <ul class="breadcrumb left hide-on-small-only">
-      <li><a href="#" class="b-focus">Inicio</a></li>
+      <li><a href="#">Instituciones</a></li>
+      <li><i class="icon-linear-chevron-right bread-i"></i></li>
+      <li><a href="#" class="">Ficha inst.</a></li>
+      <li><i class="icon-linear-chevron-right bread-i"></i></li>
+      <li><a href="#" class="b-focus">Ficha est.</a></li>
     </ul>
     <ul class="right fix">
+
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
-      <li><img src="images/student-avatar-m.png" alt="as" class="avatar-nav-top circle1"></li>
+      
 
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Juan Carlos<i class="icon-linear-chevron-down right"></i></a></li>
     </ul>
@@ -79,109 +82,57 @@
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo"><a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
             </li>
-         <li class="main-nav-pad"><a href="#"><i class="icon-linear-history icon-nav-size"></i><span>Inicio</span></a></li>
-      <li class="main-nav-pad active"><a href="#" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span>Asistencia</span></a></li>
-      <li class="main-nav-pad"><a href="#"><i class="icon-linear-list3 icon-nav-size"></i> <span>Calificaciones</span></a></li>
-      <li class="main-nav-pad"><a href="#"><i class="icon-linear-calendar-full icon-nav-size"></i> <span>Calendario</span></a></li>
-      <li class="main-nav-pad"><a href="#"><i class="icon-linear-calendar-user icon-nav-size"></i> <span>Convivencia</span></a></li>
-      
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-history icon-nav-size"></i> <span>Inicio</span></a></li>
+      <li class="main-nav-pad active"><a href="#"><i class="icon-linear-city icon-nav-size"></i> <span>Instituciones</span></a></li>
+      <li class="main-nav-pad"><a href="#"><i class="icon-linear-users icon-nav-size"></i> <span>Usuarios</span></a></li>
 
       </ul>
  </header>
 
- <!-- startMain content--> 
- <main>
- <div class="container fadeIn animated">
-  <div class="row">
-        <div class="col s10 m10 l10">
-          <h3 class="header">Asistencia</h3>
-                 
-        </div>
-  </div>
-    
+ <main><!-- startMain content-->   
+<div class="container">
+  <div class="row mar-top-soft">
 
-    <div class="row">
+    <div class="col s12 m8 l8">
+    <h3 class="header">Belgrano Day School</h3>
+    <h5 class="header">Nivel secundario</h5>
+    </div>
+    <div class="col s12 m4 l4 center-align">
+    <img src="images/belgranods.jpg" alt="as" class="inst-thumb mar-top-soft">
+    </div><!--  End Tables Section  -->
 
-    <div class="col s12 "> 
-        <div class="col s12 m12 l12"> <!-- startWidget 2--> 
-          <div class="row">
-            <div class="col s12">
-                  <div class="">
+</div>
+<div class="divider mar-top-soft"></div>
 
-                    <div class="panel-body2 center-align">
-                      <div class="col s12 m12 l12"> <div class="row">
-                        <div class="col s12 m6 l6 border-r">
-                        
-                        <h1 class="asist-m">3 <span class="asist-widget-span-in">Inasistencias </span></h1>
-                         <h6>De un total de 25</h6>
-                        </div>
-                        <div class="col s12 m6 l6">
-                        
-                        <h1 class="asist-m">4<span class="asist-widget-span-in"> Legadas tarde</span></h1>
-                        <h6 class="">4 tardes equivalen a 1 falta</h6>
-                        </div></div>
-                      </div>
-                  </div>
+      <div class="row mar-top-soft">
+        <div class="col s12 m12 l12">
+              <div class="row">
+               <div class="col s10 m10 l10">
+                 <h4 class="header">Establecimiento 1</h4>
                 </div>
-            </div>
-          </div>
-    </div><!-- endWidget 2--> 
-        <div class="col s12 m12 l12 mar-bot-top"> <!-- start table 2--> 
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <table class="striped centered responsive-table">
-                <thead>
-                  <tr>
-                      <th data-field="">Fecha</th>
-                      <th data-field="">Asistencia</th>
-                      <th data-field="">En horario</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>09/05/2015</td>
-                    <td ><i class="icon-linear-check check-g"></i></td>
-                    <td><i class="icon-linear-alarm-check check-g"></i></td>
-                  </tr>
-                  <tr>
-                    <td>08/05/2015</td>
-                    <td><i class="icon-linear-check check-g"></i></td>
-                    <td><i class="icon-linear-alarm-error cross-r"></i></td>
-                  </tr>
-                  <tr>
-                    <td>07/05/2015</td>
-                    <td><i class="icon-linear-cross2 cross-r"></i></td>
-                    <td><i class="icon-linear-alarm-error cross-r"></i></td>
-                  </tr>
+                <div class="col s2 m2 l2">
+                 <a href="abm-instituciones-nueva.html" data-position="left" data-delay="25" data-tooltip="Editar establecimiento" class="tooltipped btn-floating btn-large waves-effect waves-light new-btn-marg"><i class="icon-linear-pencil"></i></a>
+                </div>
+              </div>
+        </div>
+        <div class="col s12 m6 l6">
+        <h5 class="header">Dirección: <span class="span-s"> Monroe 321</span></h5>
+        <h5 class="header">Longitud: <span class="span-s"> 23234323</span></h5>
+        <h5 class="header">Código país: <span class="span-s"> 123</span></h5>
+        <h5 class="header">Fecha de inaguración: <span class="span-s"> 16/06/2001</span></h5>
+        <h5 class="header">Fecha de creación: <span class="span-s"> 16/06/2015</span></h5>
+        </div>
+        <div class="col s12 m6 l6">
+        <h5 class="header">Ciudad: <span class="span-s"> Buenos Aires </span> </h5>
+        <h5 class="header">Código postal: <span class="span-s"> 1431</span></h5>
+        <h5 class="header">Latitud: <span class="span-s"> 2343431</span></h5>
+        <h5 class="header">Código de area: <span class="span-s"> 11</span></h5>
+        <h5 class="header">Email: <span class="span-s"> s@s.com</span></h5>
+        
 
-                  <tr>
-                    <td>05/05/2015</td>
-                    <td><i class="icon-linear-cross2 cross-r"></i></td>
-                    <td><i class="icon-linear-alarm-error cross-r"></i></td>
-                  <tr>
-                    <td>04/05/2015</td>
-                    <td><i class="icon-linear-cross2 cross-r"></i></td>
-                    <td><i class="icon-linear-alarm-error cross-r"></i></td>
-                </tbody>
-              </table>
-
-            </div>
-          </div>
-    </div><!-- end table 2--> 
-
-  </div><!-- end student 1--> 
-
-    
-  </div>
-
-  </div>
-  
-   </main>
-
-
-
-
- <!-- end Main content-->   
+        </div>
+    </div>
+</div></main><!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -198,16 +149,13 @@
 
 
     <!--  Scripts-->
-    
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
-
     <script src="js/jquery.timeago.min.js"></script>  
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
-   
 
   </body>
 </html>

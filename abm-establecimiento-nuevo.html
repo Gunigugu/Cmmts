@@ -23,9 +23,8 @@
 
    
   </head>
-  <body>
-
- <header>
+<body>
+<header>
  <!-- Fixed nav -->    
 <div class="navbar-fixed">
 
@@ -58,7 +57,7 @@
     <ul class="breadcrumb left hide-on-small-only">
       <li><a href="#">Instituciones</a></li>
       <li><i class="icon-linear-chevron-right bread-i"></i></li>
-      <li><a href="#" class="b-focus">Ficha inst.</a></li>
+      <li><a href="#" class="b-focus">Añadir establecimiento</a></li>
     </ul>
     <ul class="right fix">
 
@@ -86,96 +85,97 @@
 
       </ul>
  </header>
-
- <main><!-- startMain content-->   
+ 
+  <main><!-- startMain content-->   
 <div class="container">
-  <div class="row mar-top-soft">
 
-    <div class="col s12 m8 l8">
-    <h3 class="header">Belgrano Day School</h3>
-    <h5 class="header">Nivel secundario</h5>
-    </div>
-    <div class="col s12 m4 l4 center-align">
-    <img src="images/belgranods.jpg" alt="as" class="inst-thumb mar-top-soft">
-    </div><!--  End Tables Section  -->
+  
+        
 
-</div>
-<div class="divider mar-top-soft"></div>
-      <div class="row mar-top-soft">
-        <div class="col s12 m6 l6">
-        <h5 class="header">Establecimientos: <span class="span-s"> 2</span></h5>
-        <h5 class="header">Directivos: <span class="span-s"> 3</span></h5>
-        <h5 class="header">Profesores: <span class="span-s"> 21</span></h5>
-        </div>
-        <div class="col s12 m6 l6">
-        <h5 class="header">Estudiantes: <span class="span-s"> 456 <a data-position="top" data-delay="25" data-tooltip="Descargar listado" class="tooltipped  btn-small btn waves-effect waves-light mar-fix-1 "><i class="icon-linear-download2"></i></a></span> </h5>
-
-        <h5 class="header">Bedeles: <span class="span-s"> 0</span></h5>
-
-        </div>
+    <div class="row mar-top-soft">
+              <div class="col s10 m10 l10">
+          <h3 class="header">Añadir establecimiento</h3>
+          <h4 class="header">Datos de establecimiento</h4>      
+        </div> 
     </div>
 
-
-
-      <!--  Tables Section-->
-      
-
-      <div id="striped" >
-        <div class="row">
-          <div class="col s10 m10 l10 mar-top-soft">
-            <h4 class="header ">Establecimientos de la institución</h4>
-              
+  <div class="row">
+        <div class="input-field col s12 m6 l6">
+            <input  id="nombre_inst" type="text" class="validate">
+            <label for="nombre_inst">Nombre del establecimiento</label>    
+        </div>
+         <div class="input-field col s12 m6 l6">
+            <select>
+              <option value="" disabled selected>Seleccionar ciudad</option>
+              <option value="1">Buenos Aires</option>
+              <option value="2">Mar del Plata</option>
+              <option value="3">Río Grande</option>
+            </select>
+            
           </div>
-
-          <div class="col s2 m2 l2 mar-top-soft">
-            <a href="abm-instituciones-nueva.html" data-position="left" data-delay="25" data-tooltip="Añadir nuevo establecimiento" class="tooltipped btn-floating btn-large waves-effect waves-light new-btn-marg"><i class="icon-linear-plus"></i></a>
-          </div>
-
-
+        <div class="input-field col s12 m6 l6">        
+            <input  id="nombre_apoderado" type="text" class="validate">
+            <label for="nombre_apoderado">Dirección</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Código postal</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Longitud</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Latitud</label>
         </div>
 
-          <div class="row">
-            <div class="col s12">
-              
-              <table class="striped">
-                <thead>
-                  <tr>
-                      <th data-field="id">Nombre</th>
-                      
-                      <th data-field="price">Creación</th>
-                      <th data-field="price">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="abm-establecimiento-detalle.html" class="casual">Establecimiento 1</a></td>
-                    
-                    <td>15 Sep, 8:56 AM 2015</td>
-                    <td>
-                      <a data-position="top" data-delay="25" data-tooltip="Editar" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-pencil"></i></a>
-                      
-                      <a data-position="top" data-delay="25" data-tooltip="Eliminar establecimiento" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
-                    </td>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Código país</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Código area</label>
+        </div>
+        <div class="input-field col s12 m6 l6">        
+            <input  id="tel" type="number" class="validate">
+            <label for="tel">Teléfono</label>
+        </div>
+          <div class="input-field col s12 m6 l6">
+            <input  id="email" type="email" class="validate">
+            <label for="email">Correo electrónico oficial</label>         
+        </div>
+        <div class=" col s12 m6 l6"> 
+        <i class="icon-linear-calendar-full"></i>
+              <label for="birthdate" class="">Fecha de inaguración</label>
+            <input type="date" class="datepicker">
+
+        </div>
+        <div class="divider mar-bot-top col s12 m12 l12"></div>
+        <div class="col s12 m12 l12"> <h4 class="header">Importante!</h4><p class="header">Se deben completar correctamente la <strong>totalidad de faltas  para que un alumno se quede libre </strong> y la cantidad de <strong>llegadas tarde que equivalen a una falta.</strong></p>
+          <div class="input-field col s12 m6 l6">
+            <input  id="number" type="number" class="validate">
+            <label for="number" data-error="Incorrecto" data-success="Correcto">Total de faltas</label>         
+        </div>
+          <div class="input-field col s12 m6 l6">
+            <input  id="number" type="number" class="validate">
+            <label for="number" data-error="Incorrecto" data-success="Correcto">Cantidad de llegadas tarde que equivalen una falta</label>         
+        </div>
+        <div class="input-field col s12 mar-top-soft">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Observaciones</label>
+        </div>
+  </div>
+  <div class="row">
+      <div class="col s12 m12 l12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Finalizar</a><a href="#" class="btn-large waves-effect waves-light center-align">Agregar otro establecimiento</a></div>
+
+  </div>
+
+  </div>   <!-- end container-->  
 
 
-                  </tr>
-                  <tr>
-                    <td><a href="abm-establecimiento-detalle.html" class="casual">Establecimiento 2</a></td>
-                    
-                    <td>15 Sep, 8:56 AM 2015</td>
-                    <td>
-                      <a data-position="top" data-delay="25" data-tooltip="Editar" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-pencil"></i></a>
-                      
-                      <a data-position="top" data-delay="25" data-tooltip="Eliminar establecimiento" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-      </div><!--  End Tables Section  -->
-</div></main><!-- end Main content-->   
+ </main><!-- end Main content-->   
 <footer class="page-footer">
           <div class="footer-copyright">
             <div class="container">
@@ -185,13 +185,8 @@
           </div>
 </footer>
 
-      
-       
-    
-
-
-
     <!--  Scripts-->
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
@@ -199,6 +194,14 @@
     <script src="js/prism.js"></script>
     <script src="bin/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script>$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });</script>
+    <script>$(document).ready(function() {
+    $('select').material_select();
+  });</script>
+
 
   </body>
 </html>
