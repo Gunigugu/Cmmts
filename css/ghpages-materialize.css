@@ -12488,6 +12488,15 @@ vertical-align: middle;}
     font-size: 1em;
     float: right;
     }
+.califications {
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  padding: 0px 0.4rem 0px 0.4rem;
+  margin-right: 0.4rem;
+    font-size: 1em;
+    
+    }
 
 .widget-califications-date {
   font-weight: 300;
@@ -12645,15 +12654,30 @@ vertical-align: middle;}
          font-size: 2rem;
   vertical-align: sub;
     }
+.conv-i {
+         font-size: 1.5rem;
+  vertical-align: sub;
+  padding-left: 1rem;
+    }
 
 .news-i-g {
-       
+    
+     color: #2ECC71 !important;
+     
+    }
+.i-g {
+    
      color: #2ECC71 !important;
      
     }
 .news-i-n {
        
      color: #ccc !important;
+     
+    }
+.i-b {
+     
+     color: #EE8277 !important;
      
     }
 .news-i-b {
