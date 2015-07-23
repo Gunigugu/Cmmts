@@ -2600,6 +2600,8 @@ span.badge {
 
 .circle {
   border-radius: 50%; }
+.circle-child {
+  border: 3px solid #F39A6D; }
 
 .center-block {
   display: block;
