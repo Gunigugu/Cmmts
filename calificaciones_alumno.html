@@ -47,11 +47,11 @@
 <ul id="dropdown3" class="dropdown-content drop-messages">
   <span class="circle dot"></span>
   <div clasS="notifi"><h6>Mensajes</h6></div>
-  <li><a href="#!" class="t-s"><b>Don Mota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
+  <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
   <li class="divider"></li>
-  <li><a href="#!" class="t-s"><b>Marta Chota</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+  <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
 </ul>
 <nav>
   <div class="nav-wrapper">
@@ -72,28 +72,38 @@
 </nav>
 </div> 
  <!-- Main nav -->   
-
   <!-- Fixed nav anti bullyng -->   
-
-
       <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo"><a href="#!" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a>
-            </li>
-         <li class="main-nav-pad"><a href="#"><i class="icon-linear-history icon-nav-size"></i><span>Inicio</span></a></li>
-      <li class="main-nav-pad"><a href="#" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span>Asistencia</span></a></li>
-      <li class="main-nav-pad active"><a href="#"><i class="icon-linear-list3 icon-nav-size"></i> <span>Calificaciones</span></a></li>
-      <li class="main-nav-pad"><a href="#"><i class="icon-linear-calendar-full icon-nav-size"></i> <span>Calendario</span></a></li>
-      <li class="main-nav-pad "><a href="#"><i class="icon-linear-calendar-user icon-nav-size"></i> <span>Convivencia</span></a></li>
-      
-
+        <li class="logo"><a href="dashboard_alumno.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a></li>
+         <li class="main-nav-pad"><a href="dashboard_alumno.html"><i class="icon-linear-history icon-nav-size"></i><span class="span-va">Inicio</span></a></li>
+          <li class="main-nav-pad"><a href="asistencia_alumno.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
+          <li class="main-nav-pad active"><a href="calificaciones_alumno.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificaciones</span></a></li>
+          <li class="main-nav-pad"><a href="calendario_alumno.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
+          <li class="main-nav-pad"><a href="convivencia_alumno.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
+          <!-- Modal Trigger -->
+          <li class="main-nav-pad mar-top-soft"><a href="#modal1" class="modal-trigger btn-xsmall waves-effect waves-light antibully"><i class="icon-linear-notification icon-nav-size-ab"></i> <span class="bullytext">Anti Bullyng</span></a></li>
       </ul>
  </header>
 
  <!-- startMain content--> 
  <main>
+          <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center-align">
+      <h1 class="w-red"><i class="icon-linear-notification"></i></h1>
+      <p>Usted está a punto de generar una alerta.<br> El directivo será informado de esta situación y se contactará para analizarla.
+       </p>
+       <h5>¿Desea continuar?</h5>
+    </div>
+    <div class="modal-footer center-align">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Continuar</a>
+    </div>
+  </div>
+
  <div class="container fadeIn animated">
   <div class="row mar-top-soft">
-        <div class="col s12 m6 l6 ">
+        <div class="col s12 m12 l12 ">
           <h3 class="header">Planilla de calificaciones</h3>      
         </div>
    </div>
@@ -119,47 +129,47 @@
                   <tr>
                     <td>09/05/2015</td>
                     <td>Matemática</td>
-                    <td><span class="califications i-g">8</span></td>
+                    <td><span class="califications">8</span></td>
                     <td>-</td>
                   </tr>
                   <tr>
                     <td>09/05/2015</td>
                     <td>Ed. cívica</td>
-                    <td><span class="califications i-b">2</span></td>
+                    <td><span class="califications">2</span></td>
                     <td>A recuperatorio</td>
                   </tr>
                   <tr>
                     <td>09/05/2015</td>
                     <td>Geografía</td>
-                    <td><span class="califications i-g">8</span></td>
+                    <td><span class="califications">8</span></td>
                     <td>-</td>
                   </tr>
 
                   <tr>
                     <td>09/05/2015</td>
                     <td>Música</td>
-                    <td><span class="califications i-g">8</span></td>
+                    <td><span class="califications">8</span></td>
                     <td>-</td>
                   </tr>
                   <tr>
                     <td>09/05/2015</td>
                     <td>Inglés</td>
-                    <td><span class="califications i-b">4</span></td>
+                    <td><span class="califications">4</span></td>
                     <td>A recuperatorio</td>
                   </tr>
                     <td>09/05/2015</td>
                     <td>Lengua y literatura</td>
-                    <td><span class="califications i-g">8</span></td>
+                    <td><span class="califications">8</span></td>
                     <td>-</td>
                   </tr>
                     <td>09/05/2015</td>
                     <td>Deportes</td>
-                    <td><span class="califications i-g">7</span></td>
+                    <td><span class="califications">7</span></td>
                     <td>-</td>
                   </tr>
                     <td>09/05/2015</td>
                     <td>Historia</td>
-                    <td><span class="califications i-g">10</span></td>
+                    <td><span class="califications">10</span></td>
                     <td>-</td>
                   </tr>
                 </tbody>
@@ -177,7 +187,7 @@
           <div class="footer-copyright">
             <div class="container">
             © 2015 Communitas - Comunidad educativa virtual
-            <a class="grey-text text-lighten-4 right" href="#!">Ayuda</a>
+            <a class="grey-text text-lighten-4 right" href="under-construction.html">Ayuda</a>
             </div>
           </div>
 </footer>
