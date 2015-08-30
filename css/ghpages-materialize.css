@@ -2328,7 +2328,8 @@ td, th {
       border: 0; }
     table.responsive-table.bordered tbody tr {
       border-right: 1px solid #d0d0d0; } }
-
+.coll-btn-fix {
+  margin-top: -6px; }
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
@@ -8676,6 +8677,9 @@ small {
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff; }
+.panel-grupos {
+  padding: 20px;
+ }
 
 .card {
   position: relative;
@@ -9077,7 +9081,7 @@ button.btn-floating {
 
 .btn-block {
   display: block; }
-
+.border-right {border-right: 1px solid #D8E2E7; }
 .dropdown-content {
   background-color: #F4F7F8;
   margin: 0;
@@ -12069,6 +12073,11 @@ body.parallax-demo footer {
 .mar-top {
     margin-top: 3.5rem !important;
 }
+
+.mar-top-fix {
+    margin-top: 15px;
+}
+
 .mar-fix-1 {
       margin: -10px 0px 0px 20px;
 }
@@ -12290,8 +12299,12 @@ vertical-align: sub;}
   min-width: 300px !important;
 }
 
-
-
+.input-date-martop {
+    margin-top: 1.45rem !important;}
+.avatar2  {
+    min-height: 62px !important;
+    padding-left: 72px !important;
+    position: relative; }
 
 .collection1 .collection-item1.avatar1 .circle1 {
         margin-right: 10px;
@@ -12788,6 +12801,10 @@ vertical-align: sub;}
     margin-right: 240px;
 }
   
+.new-student {
+    background-color: rgba(253, 235, 226, 0.68) !important;
+}
+
 .new-student {
     background-color: rgba(253, 235, 226, 0.68) !important;
 }
