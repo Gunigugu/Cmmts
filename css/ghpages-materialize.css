@@ -9969,6 +9969,11 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
     right: 0;
     top: 0;
     font-size: 23px; }
+
+.mdi-navigation-arrow-drop-down:before {
+    content: "\e93a";
+    vertical-align: sub;
+        vertical-align: -webkit-baseline-middle; }
     .select-wrapper .mdi-navigation-arrow-drop-down.disabled {
       color: rgba(0, 0, 0, 0.26); }
   .select-wrapper + label {
@@ -12451,6 +12456,10 @@ vertical-align: sub;}
   
     padding-bottom: 2rem;
   }
+.panel-assigment {
+  
+    padding: 1rem;
+  }
 .panel-fix-da {
   
     padding-bottom: 1.5rem;
@@ -12529,6 +12538,17 @@ vertical-align: sub;}
     font-size: 1em;
     float: right;
     }
+.widget-exams {
+  font-weight: 800;
+  text-transform: uppercase;
+  border-left: 1px solid #cacaca;
+  padding: 0px 0.4rem 0px 0.4rem;
+  margin-right: 0.4rem;
+    font-size: 1em;
+    
+    color: #E49268;
+    }
+
 .califications {
   font-weight: 800;
   text-transform: uppercase;
