@@ -8441,7 +8441,7 @@ nav {
       nav ul a:hover {
         color: #F39A6D; }
         nav ul a.active {
-        border-bottom: 3px solid #F39A6D;
+        border-bottom: 2px solid #F39A6D;
         font-weight: 600;  }
 
 
@@ -8836,7 +8836,7 @@ small {
       float: right; } }
 
 .tabs {
-  height: 46px !important;
+  height: 76px !important;
   position: relative;
   height: 48px;
   background-color: #fff;
@@ -8851,12 +8851,12 @@ small {
     height: 38px;
     padding: 0 20px;
     margin: 0;
-    
+    text-transform: uppercase;
     letter-spacing: .8px;
     width: 15%; }
 
     .tabs .tab a {
-      color: #3C3C3B;
+      color: #F39A6D;
       display: block;
       width: 100%;
       height: 100%;
@@ -8866,9 +8866,7 @@ small {
       -ms-transition: color .28s ease;
       transition: color .28s ease; }
       .tabs .tab a:hover {
-        color: #F39A6D; }
-      .tabs .tab a:active {
-        color: #F39A6D; }
+        color: #f9c9cb; }
     .tabs .tab.disabled a {
       color: #f9c9cb;
       cursor: default; }
@@ -8974,20 +8972,6 @@ small {
   transition: .2s ease-out;
   cursor: pointer;
     padding: 0px 8px 0px 8px !important; }
-.smalla-white {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: transparent;
-  border: 0px solid #ffffff;
-  text-align: center;
-  letter-spacing: .5px;
-  -webkit-transition: .2s ease-out;
-  -moz-transition: .2s ease-out;
-  -o-transition: .2s ease-out;
-  -ms-transition: .2s ease-out;
-  transition: .2s ease-out;
-  cursor: pointer;
-    padding: 0px 8px 0px 8px !important; }
 .btn-xsmall {
   border-radius: 20px;
   text-decoration: none;
@@ -9010,9 +8994,6 @@ padding: 0px 10px 0px 10px !important;}
   .btn:hover:hover, .btn-small:hover, .btn-xsmall:hover {
     background-color: #F39A6E !important;
     color: #fff !important; }
-  .smalla-white:hover {
-    background-color: #ffffff !important;
-    color: #F39A6E !important; }
 
 .mistake  {
     color: #EDC5B1 !important;
@@ -10365,7 +10346,7 @@ select {
   opacity: 0; }
 
 .spinner-blue, .spinner-blue-only {
-  border-color: #F29D71; }
+  border-color: #4285f4; }
 
 .spinner-red, .spinner-red-only {
   border-color: #db4437; }
@@ -12175,8 +12156,6 @@ body.parallax-demo footer {
   padding: 0px 10px 0px;
 vertical-align: middle;}
 
-
-
 .icon-nav-size-ab
 {
   font-size: 26px;
@@ -12218,12 +12197,6 @@ vertical-align: sub;}
 
 
 .ic:focus {
-  
-  color: rgb(243, 154, 109);
-  
-}
-
-.ic:active {
   
   color: rgb(243, 154, 109);
   
@@ -12284,21 +12257,13 @@ vertical-align: sub;}
 
 }
 
-.notifii{
-      background-color: #fff !important;
-}
 
-.notifii h6 {
-    text-align: center;
-    font-weight: 600;
-    padding: 2px 0px 2px 0px;
-}
+
 .notifi{
   margin:0;
   border-bottom: 1px solid #D8E2E7;   
   /* border-top: 1px solid #F39A6D; */
-  background-color: #fff !important;
-  cursor: default !important;
+  background-color: #fff;
 }
 
 
@@ -12310,9 +12275,8 @@ vertical-align: sub;}
 }
 
 .notifi h6:hover {
-    color: rgba(0, 0, 0, 0.87) !important;
+    color: #666666 !important;
 }
-
 
 .drop-user {
   width: 200px !important;
@@ -12363,6 +12327,7 @@ vertical-align: sub;}
         display: inline-block;
         vertical-align: middle; }
         .avatar-nav-top {
+        
         height: 32px;
         overflow: hidden;
         
@@ -12487,22 +12452,6 @@ vertical-align: sub;}
   -ms-transition: .2s ease-out;
   transition: .2s ease-out;
   }
-.panel-mini {
-    margin-bottom: 15px;
-    background-color: #fff;
-    border: 1px solid #D8E2E7;
-    border-left: 1px solid #F39A6D;
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    -o-transition: .2s ease-out;
-    -ms-transition: .2s ease-out;
-    transition: .2s ease-out;
-  }
-  .panel-mini:hover {
-  
-  border: 1px solid #F39A6D;
-  }
-
 .panel-fix {
   
     padding-bottom: 2rem;
@@ -12904,131 +12853,3 @@ vertical-align: sub;}
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255,0,0,0.4); 
 }
-
-
-table.highlight > tbody > tr {
-    -webkit-transition: background-color .25s ease;
-    -moz-transition: background-color .25s ease;
-    -o-transition: background-color .25s ease;
-    -ms-transition: background-color .25s ease;
-    transition: background-color .25s ease;
-}
-
-table.highlight > tbody > tr:hover {
-    background-color: #f2f2f2;
-}
-
-/* mailbox */
-
-.mailbox {
-  color: #3C3C3B;
-}
-
-.icon-mailbox-size
-{
-    font-size: 18px;
-    padding: 0px 0.2rem 0px;
-    vertical-align: text-bottom;
-}
-
-.mb-actions-container {
-      vertical-align: middle;
-}
-
-.mb-container {
-      border-bottom: 1px solid #e0e0e0;
-      border-right: 1px solid #e0e0e0;
-      border-left: 1px solid #e0e0e0;
-      vertical-align: middle;
-    -webkit-transition: background-color .25s ease;
-    -moz-transition: background-color .25s ease;
-    -o-transition: background-color .25s ease;
-    -ms-transition: background-color .25s ease;
-    transition: background-color .25s ease;
-}
-
-.mb-container:first-child {
-      border: 1px solid #e0e0e0;
-      vertical-align: middle;
-    -webkit-transition: background-color .25s ease;
-    -moz-transition: background-color .25s ease;
-    -o-transition: background-color .25s ease;
-    -ms-transition: background-color .25s ease;
-    transition: background-color .25s ease;
-}
-
-.mb-container-new {
-      background-color: rgba(228, 146, 104, 0.15);
-}
-
-.mb-container:hover {
-      cursor: pointer; 
-      background-color: #F4F7F8;
-      
-}
-
-.mb-name {
-      font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 0px !important;
-}
-
-.mb-st {
-      font-size: 14px;
-    font-weight: 500;
-    margin: 4px 0px 0px 0px !important;
-    
-}
-
-.mb-t {
-      font-size: 13px;
-    font-weight: 300;
-    margin-top: 4px !important;
-}
-
-.weak {
-
-    font-weight: 300;
-    
-
-}
-.weaky {
-
-    font-weight: 600;
-    color: #ffffff;
-
-}
-.mail-header {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 20px;
-}
-
-
-  .avatar-mb {
-  height: 40px;
-  overflow: hidden;
-  margin-top: 2px;
-  display: inline-block;
-  }
-
-  .notification-c {
-     
-  }
-
-  .notification-c li {
-  padding: 1rem 1rem;
-  color: rgba(0,0,0,0.75);
-   
-  }    
-
-    .notification-c li a {
-
-  color: rgba(0,0,0,0.75);
-   
-  }    
-      .notification-c li a:hover {
-
-  color: rgb(228, 146, 104);
-   
-  }   
