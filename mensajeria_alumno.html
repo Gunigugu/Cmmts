@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Communitas - Comunidad educativa virtual ">
+    <title>Communitas</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/animate.css" rel="stylesheet">
+
+    
+    
+    
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
+
+   
+  </head>
+<body>
+ <header>
+ <!-- Fixed nav -->    
+<div class="navbar-fixed">
+
+<ul id="dropdown1" class="dropdown-content drop-user">   
+  <li><a href="#!" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
+  <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content drop-notification">
+  <span class="circle dot"></span>
+  <li class="notifi"><h6>Notificaciones</h6></li>
+  <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
+  <li class="divider"></li>
+  <li class="notifii"><h6>Ver todas</h6></li>
+</ul>
+<ul id="dropdown3" class="dropdown-content drop-messages">
+  <span class="circle dot"></span>  
+  <li class="notifi"><h6>Mensajes</h6></li>
+  <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li class="notifii"><h6>Ver todos</h6></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+  <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
+    
+    <ul class="breadcrumb left hide-on-small-only">
+      <li><a href="#" class="b-focus">Mensajes</a></li>
+    </ul>
+    <ul class="right fix">
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
+      <li><a class="dropdown-button ic active" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
+      <li><img src="images/student-avatar-m.png" alt="as" class="avatar-nav-top circle1"></li>
+
+      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Juan Carlos<i class="icon-linear-chevron-down right"></i></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</div> 
+ <!-- Main nav -->   
+  <!-- Fixed nav anti bullyng -->   
+      <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a href="dashboard_alumno.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a></li>
+         <li class="main-nav-pad"><a href="dashboard_alumno.html"><i class="icon-linear-history icon-nav-size"></i><span class="span-va">Inicio</span></a></li>
+          <li class="main-nav-pad"><a href="asistencia_alumno.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
+          <li class="main-nav-pad"><a href="calificaciones_alumno.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificaciones</span></a></li>
+          <li class="main-nav-pad"><a href="calendario_alumno.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
+          <li class="main-nav-pad"><a href="convivencia_alumno.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
+          <!-- Modal Trigger -->
+          <li class="main-nav-pad mar-top-soft"><a href="#modal1" class="modal-trigger btn-xsmall waves-effect waves-light antibully"><i class="icon-linear-notification icon-nav-size-ab"></i> <span class="bullytext">Anti Bullyng</span></a></li>
+      </ul>
+ </header>
+
+ <!-- startMain content--> 
+ <main>
+          <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center-align">
+      <h1 class="w-red"><i class="icon-linear-notification"></i></h1>
+      <p>Usted está a punto de generar una alerta.<br> El directivo será informado de esta situación y se contactará para analizarla.
+       </p>
+       <h5>¿Desea continuar?</h5>
+    </div>
+    <div class="modal-footer center-align">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Continuar</a>
+    </div>
+  </div>
+
+ <div class="container fadeIn animated">
+  <div class="row">
+        <div class="col s12 m12 l12 mar-top-soft">
+          <h4 class="header">Mensajes</h4>      
+        </div>
+  </div>
+
+    <div class="row">  <!-- row contenedor de #test1 #test2 #test3 #test4 -->
+<!-- start nav-inbox -->
+    <div class="col s12 mar-top-soft"> 
+      <ul class="tabs">
+
+        <li class="tab col s3 m3 l3 mailbox"><a class="active" href="#recibido"><i class="icon-linear-inbox2 icon-mailbox-size"></i> Recibido</a></li>
+        <li class="tab col s3 m3 l3 mailbox"><a href="#enviado"><i class="icon-linear-paper-plane icon-mailbox-size"></i> Enviado</a></li>
+        <li class="tab col s3 m3 l3 mailbox"><a href="#borrador"><i class="icon-linear-archive2 icon-mailbox-size"></i> Borrador</a></li>
+        <li class="tab col s3 m3 l3 mailbox"><a href="#papelera"><i class="icon-linear-trash2 icon-mailbox-size"></i> Papelera</a></li>
+      </ul>
+    </div>
+ <!-- end nav-inbox-->
+
+ <!-- start inbox-->
+ <div id="recibido" class="fadeIn animated">
+              <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                  <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test10" class="filled-in">
+                                <label for="test10"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s2 l1">
+                          <a data-position="top" data-delay="25" data-tooltip="Eliminar" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
+                        </div>
+                        <div class="col s2 l5">
+                          <a href="mensajeria-nuevo_alumno.html" class="btn-large waves-effect waves-light center-align mar-right">REDACTAR</a>
+                        </div>
+                        <div class="col s8 m1 l5 right-align">
+
+                          <span class="weak"><strong>1–3</strong> de <strong>15</strong></span>
+                          <a href="under-construction.html" class="disabled"><i class=" icon-linear-chevron-left icon-mailbox-size"></i></a>
+                          
+                          <a href="under-construction.html"><i class="icon-linear-chevron-right icon-mailbox-size"></i></a>
+
+                        </div>
+                  </div>
+                </div>
+
+    <div class="col s12 mar-top-soft">
+
+                 <div class="col s12 mb-container mb-container-new valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test11" class="filled-in">
+                                <label for="test11"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test12" class="filled-in">
+                                <label for="test12"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test13" class="filled-in">
+                                <label for="test13"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test14" class="filled-in">
+                                <label for="test14"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test15" class="filled-in">
+                                <label for="test15"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+    </div>
+</div>  <!-- end #recibido-->
+
+    <div id="enviado" class="fadeIn animated">
+              <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                  <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test10" class="filled-in">
+                                <label for="test10"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s2 l1">
+                          <a data-position="top" data-delay="25" data-tooltip="Eliminar" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
+                        </div>
+                        <div class="col s2 l5">
+                          <a href="mensajeria-nuevo_alumno.html" class="btn-large waves-effect waves-light center-align mar-right">REDACTAR</a>
+                        </div>
+                        <div class="col s8 m1 l5 right-align">
+
+                          <span class="weak"><strong>1–2</strong> de <strong>10</strong></span>
+                          <a href="under-construction.html" class="disabled"><i class=" icon-linear-chevron-left icon-mailbox-size"></i></a>
+                          
+                          <a href="under-construction.html"><i class="icon-linear-chevron-right icon-mailbox-size"></i></a>
+
+                        </div>
+                  </div>
+                </div>
+
+    <div class="col s12 mar-top-soft">
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test11" class="filled-in">
+                                <label for="test11"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test12" class="filled-in">
+                                <label for="test12"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test13" class="filled-in">
+                                <label for="test13"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test14" class="filled-in">
+                                <label for="test14"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test15" class="filled-in">
+                                <label for="test15"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+    </div>
+    </div><!-- end #enviado-->
+    <div id="borrador" class="fadeIn animated">
+              <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                  <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test10" class="filled-in">
+                                <label for="test10"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s2 l1">
+                          <a data-position="top" data-delay="25" data-tooltip="Eliminar" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
+                        </div>
+                        <div class="col s2 l5">
+                          <a href="mensajeria-nuevo_alumno.html" class="btn-large waves-effect waves-light center-align mar-right">REDACTAR</a>
+                        </div>
+                        <div class="col s8 m1 l5 right-align">
+
+                          <span class="weak"><strong></strong> <strong>3</strong></span>
+                          <a href="under-construction.html" class="disabled"><i class=" icon-linear-chevron-left icon-mailbox-size"></i></a>
+                          
+                          <a href="under-construction.html"><i class="icon-linear-chevron-right icon-mailbox-size"></i></a>
+
+                        </div>
+                  </div>
+                </div>
+
+    <div class="col s12 mar-top-soft">
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test13" class="filled-in">
+                                <label for="test13"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test14" class="filled-in">
+                                <label for="test14"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test15" class="filled-in">
+                                <label for="test15"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+    </div>
+    </div><!-- end #borrador-->
+    <div id="papelera" class="fadeIn animated">
+              <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                  <div class="col s12 mb-actions-container valign-wrapper mar-top-soft">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test10" class="filled-in">
+                                <label for="test10"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s2 l1">
+                          <a data-position="top" data-delay="25" data-tooltip="Eliminar" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-trash2"></i></a>
+                        </div>
+                        <div class="col s2 l5">
+                          <a href="mensajeria-nuevo_alumno.html" class="btn-large waves-effect waves-light center-align mar-right">REDACTAR</a>
+                        </div>
+                        <div class="col s8 m1 l5 right-align">
+
+                          <span class="weak"><strong>1–3</strong> de <strong>15</strong></span>
+                          <a href="under-construction.html" class="disabled"><i class=" icon-linear-chevron-left icon-mailbox-size"></i></a>
+                          
+                          <a href="under-construction.html"><i class="icon-linear-chevron-right icon-mailbox-size"></i></a>
+
+                        </div>
+                  </div>
+                </div>
+
+    <div class="col s12 mar-top-soft">
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test11" class="filled-in">
+                                <label for="test11"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test12" class="filled-in">
+                                <label for="test12"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test13" class="filled-in">
+                                <label for="test13"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test14" class="filled-in">
+                                <label for="test14"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+
+                 <div class="col s12 mb-container valign-wrapper">
+                        <div class="col s2 m1 l1">
+                          <form action="#">
+                              <p>
+                                <input type="checkbox" id="test15" class="filled-in">
+                                <label for="test15"></label>
+                              </p>
+                          </form>
+                        </div>
+                        <div class="col s8 m10 l10">
+                            <p class="truncate mb-name">Roberto Gomez</p></a>
+                            <p class="truncate mb-st">Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="truncate mb-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh.</p>
+                        </div>
+                        <div class="col s2 m1 l1">
+                            <p class="pull-right center-align">12 <br>Abril</p></a>
+                        </div>
+                  </div>
+    </div>
+    </div><!-- end #papelera-->
+  </div> <!-- end row contenedor de #test1 #test2 #test3 #test4 -->
+ <!-- end inbox-->
+  </div> 
+<!-- end container-->
+</main>
+ <!-- end Main content-->   
+<footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Communitas - Comunidad Educativa Virtual
+            <a class="grey-text text-lighten-4 right" href="under-construction.html">Ayuda</a>
+            </div>
+          </div>
+</footer>
+
+    <!--  Scripts-->
+    
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
+    </script>
+
+    <script src="js/jquery.timeago.min.js"></script>  
+    <script src="js/prism.js"></script>
+    <script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+   
+
+  </body>
+</html>
