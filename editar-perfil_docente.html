@@ -37,29 +37,35 @@
 </ul>
 <ul id="dropdown2" class="dropdown-content drop-notification">
   <span class="circle dot"></span>
-  <div clasS="notifi"><h6>Notificaciones</h6></div>
+  <li class="notifi"><h6>Notificaciones</h6></li>
   <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
+  <li class="divider"></li>
+  <li class="notifii"><h6>Ver todas</h6></li>
 </ul>
 <ul id="dropdown3" class="dropdown-content drop-messages">
-  <span class="circle dot"></span>
-  <div clasS="notifi"><h6>Mensajes</h6></div>
+  <span class="circle dot"></span>  
+  <li class="notifi"><h6>Mensajes</h6></li>
   <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
   <li class="divider"></li>
   <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
+  <li class="divider"></li>
+  <li class="notifii"><h6>Ver todos</h6></li>
 </ul>
 <nav>
   <div class="nav-wrapper">
   <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
     
     <ul class="breadcrumb left hide-on-small-only">
-      <li><a href="#" class="b-focus">Convivencia</a></li>
+      <li><a href="#" class="b-focus">Perfil</a></li>
     </ul>
+
+
     <ul class="right fix">
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
@@ -79,7 +85,7 @@
           <li class="main-nav-pad"><a href="asistencia_alumno.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
           <li class="main-nav-pad"><a href="calificaciones_alumno.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificaciones</span></a></li>
           <li class="main-nav-pad"><a href="calendario_alumno.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
-          <li class="main-nav-pad active"><a href="convivencia_alumno.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
+          <li class="main-nav-pad"><a href="convivencia_alumno.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
           <!-- Modal Trigger -->
           <li class="main-nav-pad mar-top-soft"><a href="#modal1" class="modal-trigger btn-xsmall waves-effect waves-light antibully"><i class="icon-linear-notification icon-nav-size-ab"></i> <span class="bullytext">Anti Bullyng</span></a></li>
       </ul>
@@ -104,60 +110,116 @@
  <div class="container fadeIn animated">
   <div class="row">
         <div class="col s12 m12 l12 mar-top-soft">
-          <h3 class="header">Planilla de convivencia</h3>      
+          <h4 class="header">Editar perfil</h4>      
         </div>
   </div>
     
+  <div class="row">
+    <div class="col s12 mar-top-soft">
 
-    <div class="row ">
+              <div class="row">
+                                  <div class="input-field col s6">
+                                    <i class="icon-linear-user prefix"></i>
+                                    <input disabled value="Robertog" id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Nombre de usuario</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                    <i class="icon-linear-lock prefix"></i>
+                                    <input value="Roberto" id="icon_telephone" type="password" class="validate">
+                                    <label for="icon_telephone">Contraseña</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                    <i class="icon-linear-lock prefix"></i>
+                                    <input value="Roberto" id="icon_telephone" type="password" class="validate">
+                                    <label for="icon_telephone">Confirmar contraseña</label>
+                                  </div>
+                                  <div class="input-field col s12 align-center">
+                                    <a href="#" class="btn-large waves-effect waves-light center-align mar-right">Cambiar contraseña</a>
+                                  </div>
+              </div>
 
-    <div class="col s12 "> 
+ <div class="divider mar-bot-top col s12 m12 l12"></div>
 
-        <div class="col s12 m12 l12 mar-bot-top"> <!-- start table 2--> 
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <table class="striped responsive-table">
-                <thead>
-                  <tr>
-                      <th data-field="">Convivencia</th>
-                      <th data-field="">Observaciones</th>
-                      <th data-field="">Fecha</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><i class="icon-linear-wink news-i-g conv-i"></i></td>
-                    <td>Juan Carlos ha mejorado su conducta.</i></td>
-                    <td>09/05/2015</td>
-                  </tr>
-                  <tr>
-                    <td ><i class="icon-linear-mad news-i-b conv-i"></i></td>
-                    <td>Juan Carlos le ha faltado el respeto a su profesor.</i></td>
-                    <td>09/05/2015</td>
-                  </tr>
-                  <tr>
-                    <td ><i class="icon-linear-wink news-i-g conv-i"></i></td>
-                    <td>Juan Carlos ha mejorado su conducta.</i></td>
-                    <td>09/05/2015</td>
-                  </tr>
 
-                  <tr>
-                    <td ><i class="icon-linear-mad news-i-b conv-i"></i></td>
-                    <td>Juan Carlos le ha faltado el respeto a su profesor.</i></td>
-                    <td>09/05/2015</td>
-                  </tr>
-                  <tr>
-                    <td ><i class="icon-linear-mad news-i-b conv-i"></i></td>
-                    <td>Juan Carlos le ha faltado el respeto a su profesor.</i></td>
-                    <td>09/05/2015</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-     </div><!-- end table 2--> 
-    </div><!-- end student 1--> 
-   </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                          <select>
+                            <option value="" disabled selected>Argentina</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">Colombia</option>
+                          </select>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                          <select>
+                            <option value="" disabled selected>Buenos Aires</option>
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Mar del Plata</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">        
+                            <input value="Calle falsa 123" id="number" type="text" class="validate">
+                            <label for="number">Dirección</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">        
+                            <input alue="1432" id="number" type="number" class="validate">
+                            <label for="number">Código postal</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s3">        
+                            <input  id="number" type="number" class="validate">
+                            <label for="number">Código país</label>
+                        </div>
+                        <div class="input-field col s3">        
+                            <input  id="number" type="number" class="validate">
+                            <label for="number">Código de área</label>
+                        </div>
+                        <div class="input-field col s3">        
+                            <input  id="number" type="number" class="validate">
+                            <label for="number">Teléfono</label>
+                        </div>
+                        <div class="input-field col s3">        
+                            <input  id="number" type="number" class="validate">
+                            <label for="number">Teléfono de emergencia</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">        
+                            <input value="s@s.com" id="number" type="email" class="validate">
+                            <label for="number">Email</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">        
+                            <input  id="number" type="email" class="validate">
+                            <label for="number">Título universitario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <form action="#">
+                                <div class="file-field input-field">
+                                  <input class="file-path validate" type="text"/>
+                                  <label for="logo_img">Foto del alumno</label>
+                                  <div class="btn-large">
+                                    <span>Elegir archivo</span>
+                                    <input type="file" />
+                                  </div>
+                               </div>
+                            </form>
+                        </div>
+
+
+
+
+      <div class="col s12 center-align mar-top-soft">
+          <a href="#" class="btn-large waves-effect waves-light center-align mar-right">Guardar</a>
+
+      </div>
+
+
+      </div>
+    </div>
   </div>
 </main>
 
