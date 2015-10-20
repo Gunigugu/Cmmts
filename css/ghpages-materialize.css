@@ -9022,6 +9022,11 @@ padding: 0px 10px 0px 10px !important;}
   .btn:hover:hover, .btn-small:hover, .btn-xsmall:hover {
     background-color: #F39A6E !important;
     color: #fff !important; }
+
+ .btn-xsmall-active {
+    background-color: #F39A6E !important;
+    color: #fff !important; }
+
   .smalla-white:hover {
     background-color: #ffffff !important;
     color: #F39A6E !important; }
@@ -12106,8 +12111,15 @@ body.parallax-demo footer {
     padding-left: 30%;
    }
 .mar-right {margin-right: 1rem; }
+.mar-bot-btn-xsmall {margin-bottom: 1rem; }
+
 .mar-top {
     margin-top: 3.5rem !important;
+}    
+.mar-top-input-fix {
+    margin-top: 22px !important;
+} .mar-top-low {
+    margin-top: 0.4rem !important;
 }
 .no-mar {
     margin: -10px 0px 0px 0px;
@@ -12227,6 +12239,10 @@ vertical-align: sub;}
 
 .t-s {
     font-size: 1rem !important;
+}
+
+.no-pad {
+        padding: 0 !important;
 }
 
 .ts-s {
@@ -12628,13 +12644,23 @@ vertical-align: sub;}
     }
 
 .widget-califications-date {
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   border-right: 1px solid #cacaca;
   padding: 0px 0.4rem 0px 0.4rem;
   margin-right: 0.4rem;
     font-size: 0.8rem;
     }
+
+.widget-time-date {
+  font-weight: 400;
+  text-transform: uppercase;
+  border-right: 1px solid #F39A6D;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+    font-size: 0.8rem;
+    }
+
 
 .border-r {
     border-right: 1px solid #D8E2E7;
