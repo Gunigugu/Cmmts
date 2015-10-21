@@ -7198,6 +7198,7 @@ i {
 .mdi-hardware-desktop-windows:before {
   content: "\e7bb"; }
 
+
 .mdi-hardware-dock:before {
   content: "\e7bc"; }
 
@@ -8986,6 +8987,12 @@ small {
   transition: .2s ease-out;
   cursor: pointer;
     padding: 0px 8px 0px 8px !important; }
+
+.btn-small-cross {
+  color: #ffffff !important;
+  background-color: #E74C3C !important;
+  }
+
 .smalla-white {
   text-decoration: none;
   color: #ffffff;
@@ -11823,6 +11830,9 @@ a.button-collapse.top-nav {
   text-align: center;
   vertical-align: middle; }
 
+.icon-asist {
+  font-size: 1.2em; }
+
 .icon-demo {
   line-height: 50px; }
 
@@ -12660,6 +12670,14 @@ vertical-align: sub;}
   margin-right: 0.4rem;
     font-size: 0.8rem;
     }
+.widget-time-date-dash {
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid #F39A6D;
+  padding: 0.4rem;
+  margin-right: 0.4rem;
+    font-size: 0.8rem;
+    }
 
 
 .border-r {
@@ -13075,3 +13093,7 @@ table.highlight > tbody > tr:hover {
   color: rgb(228, 146, 104);
    
   }   
+
+
+
+

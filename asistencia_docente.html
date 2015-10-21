@@ -65,7 +65,7 @@
     
     <ul class="breadcrumb left hide-on-small-only">
     
-      <li><a href="#" class="b-focus">Calificar</a></li>
+      <li><a href="#" class="b-focus">Asistencia</a></li>
     </ul>
 
 
@@ -85,9 +85,9 @@
       <ul id="nav-mobile" class="side-nav fixed">
         <li class="logo"><a href="dashboard_docente.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a></li>
          <li class="main-nav-pad"><a href="dashboard_docente.html"><i class="icon-linear-history icon-nav-size"></i><span class="span-va">Inicio</span></a></li>
-          <li class="main-nav-pad"><a href="asistencia_docente.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
+          <li class="main-nav-pad active"><a href="asistencia_docente.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
           <li class="main-nav-pad"><a href="materias_docente.html"><i class="icon-linear-library icon-nav-size"></i> <span class="span-va">Materias</span></a></li>
-          <li class="main-nav-pad active"><a href="calificar_docente.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificar</span></a></li>
+          <li class="main-nav-pad"><a href="calificar_docente.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificar</span></a></li>
           <li class="main-nav-pad"><a href="calendario_docente.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
           <li class="main-nav-pad"><a href="convivencia_docente.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
       </ul>
@@ -98,26 +98,41 @@
  <div class="container fadeIn animated">
   <div class="row">
         <div class="col s12 m12 l12 mar-top-soft">
-          <h4 class="header">Materias a calificar</h4>      
+          <h4 class="header">Tomar asistencia</h4>  
         </div>
   </div>
-
-         <div class="row mar-top-soft">
-              <div class="input-field col s6">
+         <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <form action="#">
+                    <p>
+                      <input type="checkbox" id="test1" class="filled-in" checked="">
+                      <label for="test1">Hoy </label>
+                    </p>
+                </form>
+              </div>
+              <div class="col s12 m4 l4 mar-top-soft">
+                          <i class="icon-linear-calendar-insert"></i>
+                          <label for="birthdate" class="">Fecha</label>
+                          <input type="date" class="datepicker">
+              </div>
+          </div>
+          <div class="divider mar-bot-top"></div>
+         <div class="row">
+              <div class="input-field col s12 m6 l6">
                 <i class="icon-linear-magnifier prefix"></i>
                 <input id="icon_prefix" type="text" class="validate">
                 <label for="icon_prefix">Buscar materia</label>
               </div>
-              <div class="input-field col s4 right">
+              <div class="input-field col s12 m4 l4 right">
                 <select>
-                  <option value="" disabled selected>Filtrar por grupo</option>
+                  <option value="" disabled selected>Filtrar por</option>
                   <option value="1">4 A</option>
                   <option value="1">4 B</option>
                 </select>
               </div>
           </div>
 
-
+    
   <div class="row">
                         <div class="col s12 m12 l12">
                             <h5 class="panel-title">Matemática</h5>
@@ -125,33 +140,27 @@
                                 <div class="row">
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 A</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 B</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 C</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 D</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 A</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 B</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
 
 
@@ -165,43 +174,35 @@
                                 <div class="row">
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 A</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 B</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 C</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 D</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 A</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 B</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 C</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>2 D</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
 
 
@@ -215,18 +216,15 @@
                                 <div class="row">
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 A</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 B</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                   <div class="col s4 m2 l2 center-align border-right">
                                       <h4>1 C</h4>
-                                      <a href="calificar-ver-grupo_docente.html" data-position="top" data-delay="25" data-tooltip="Ver" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-eye"></i></a>
-                                      <a href="calificar-cargar-calificaciones_docente.html" data-position="top" data-delay="25" data-tooltip="Crear nueva instancia de calificación" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-pencil"></i></a>
+                                      <a href="asistencia-tomar_docente.html" data-position="top" data-delay="25" data-tooltip="Tomar asistencia" class="tooltipped btn-small btn waves-effect waves-light"><i class="icon-linear-clipboard-check"></i></a>
                                   </div>
                                 </div>
                               </div>
