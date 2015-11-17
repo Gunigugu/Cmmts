@@ -13110,6 +13110,20 @@ table.highlight > tbody > tr:hover {
    
   }   
 
+.table-img-mar {
+
+   margin: 0px 0px 0px 70px;
+   
+  }   
+
+.avatar-table {
+
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    margin-top: -10px;
+   
+  }   
 
 
 

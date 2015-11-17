@@ -62,9 +62,11 @@
   <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
     
     <ul class="breadcrumb left hide-on-small-only">
-      <li><a href="calificar_docente.html" class="">Calificar</a></li>
+      <li><a href="materias_docente.html" class="">Materias</a></li>
       <li><i class="icon-linear-chevron-right bread-i"></i></li>
-      <li><a href="#" class="b-focus">Nueva instancia</a></li>
+      <li><a href="materias-detalle_docente.html" class="">Detalle materia</a></li>
+      <li><i class="icon-linear-chevron-right bread-i"></i></li>
+      <li><a href="#" class="b-focus">Editar instancia</a></li>
     </ul>
 
 
@@ -85,8 +87,7 @@
         <li class="logo"><a href="dashboard_docente.html" class="brand-logo"><img class="responsive-img logo" src="images/communitas-isologotipo.png"></a></li>
          <li class="main-nav-pad"><a href="dashboard_docente.html"><i class="icon-linear-history icon-nav-size"></i><span class="span-va">Inicio</span></a></li>
           <li class="main-nav-pad"><a href="asistencia_docente.html" ><i class="icon-linear-clipboard-text icon-nav-size"></i> <span class="span-va">Asistencia</span></a></li>
-          <li class="main-nav-pad"><a href="materias_docente.html"><i class="icon-linear-library icon-nav-size"></i> <span class="span-va">Materias</span></a></li>
-          <li class="main-nav-pad active"><a href="calificar_docente.html"><i class="icon-linear-list3 icon-nav-size"></i> <span class="span-va">Calificar</span></a></li>
+          <li class="main-nav-pad active"><a href="materias_docente.html"><i class="icon-linear-library icon-nav-size"></i> <span class="span-va">Materias</span></a></li>
           <li class="main-nav-pad"><a href="calendario_docente.html"><i class="icon-linear-calendar-full icon-nav-size"></i> <span class="span-va">Calendario</span></a></li>
           <li class="main-nav-pad"><a href="convivencia_docente.html"><i class="icon-linear-calendar-user icon-nav-size"></i> <span class="span-va">Convivencia</span></a></li>
       </ul>
@@ -97,7 +98,7 @@
  <div class="container fadeIn animated">
   <div class="row">
         <div class="col s12 m12 l12 mar-top-soft">
-          <h4 class="header">Crear instancia de evaluación</h4>
+          <h4 class="header">Editar instancia de evaluación</h4>
         </div>
                         <div class="col s12 m12 l12"> <!-- start materia-->   
                               <div class="panel-mini panel-assigment">
@@ -117,20 +118,34 @@
     <div class="row">
           <div class="col s12 m12 l12">
                     <div class="input-field col s12 m6 l6 mar-top-input-fix">
-                        <input id="nombre_inst" type="text" class="validate">
+                        <input value="Instancia evaluacion 1 (Primer parcial)" id="nombre_inst" type="text" class="validate">
                         <label for="nombre_inst" class="">Nombre de la instancia</label>    
                     </div>          
                        <div class=" col s12 m6 l6"> 
                           <i class="icon-linear-calendar-insert"></i>
                           <label for="birthdate" class="">Fecha de evaluación</label>
-                           <input type="date" class="datepicker">
+                           <input value="16/03/2015" type="date" class="datepicker">
                        </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <h5 class="panel-title">Archivos asociados</h5>
+                <div class="mail-attachments">
+                          <p><i class="icon-linear-paperclip"></i> <a href="#">Descargar todos</a></p>
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <span class="name">Ejercicio.docx</span>
+                              <span class="size">(765KB)</span>
+                              <a data-position="top" data-delay="25" data-tooltip="Descargar" class="tooltipped  btn-small btn waves-effect waves-light"><i class="icon-linear-download2"></i></a>
+                            </li>
+                          </ul>
+                  </div>
+
             </div>
             <div class="col s12 m6 l6">
                 <form action="#">
                     <div class="file-field input-field">
                       <input class="file-path validate" type="text"/>
-                      <label for="logo_img">Archivos</label>
+                      <label for="logo_img">Subir archivos para la evaluación</label>
                       <div class="btn-large">
                         <span>Elegir archivos</span>
                         <input type="file" />
@@ -138,11 +153,95 @@
                    </div>
                 </form>
             </div>
+
+
+          <div class="col s12 m12 l12 mar-top-soft">
+            <h5 class="panel-title">Alumnos</h5>
+            <table class="striped">
+              <thead>
+                <tr>
+                    <th data-field="id">Nombre y apellido</th>
+                    <th data-field="price">Calificación</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="col s12">
+                      <a href="usuarios-datos-alumno_directivo.html" class="collection-a"><img src="images/child.jpg" alt="" class="circle avatar-table">
+                    <span class="title truncate table-img-mar">Juan Rodriguez</span></a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected></option>
+                        <option value="1">Insuficiente</option>
+                        <option value="2">Regular</option>
+                        <option value="3">Bien</option>
+                        <option value="4">Muy bien</option>
+                        <option value="5">Excelente</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="col s12">
+                      <a href="usuarios-datos-alumno_directivo.html" class="collection-a"><img src="images/children/wachin.gif" alt="" class="circle avatar-table">
+                    <span class="title truncate table-img-mar">Juan Rodriguez</span></a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected></option>
+                        <option value="1">Insuficiente</option>
+                        <option value="2">Regular</option>
+                        <option value="3">Bien</option>
+                        <option value="4">Muy bien</option>
+                        <option value="5">Excelente</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="col s12">
+                      <a href="usuarios-datos-alumno_directivo.html" class="collection-a"><img src="images/children/roberta.jpeg" alt="" class="circle avatar-table">
+                    <span class="title truncate table-img-mar">Juan Rodriguez</span></a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected></option>
+                        <option value="1">Insuficiente</option>
+                        <option value="2">Regular</option>
+                        <option value="3">Bien</option>
+                        <option value="4">Muy bien</option>
+                        <option value="5">Excelente</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+          </div>
     </div>
 
 
 
-     <div class="col s12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Crear</a></div>
+     <div class="col s12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Guardar</a></div>
+
+ 
+
+
+
+
 </div>
 </main>
 
