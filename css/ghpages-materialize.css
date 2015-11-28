@@ -9028,7 +9028,7 @@ small {
 .btn-xsmall-fix {
 padding: 0px 10px 0px 10px !important;} 
 
-  .btn:hover:hover, .btn-small:hover, .btn-xsmall:hover {
+  .btn:hover, .btn-small:hover, .btn-xsmall:hover {
     background-color: #F39A6E !important;
     color: #fff !important; }
 
