@@ -39,29 +39,11 @@
   <li class="divider"></li>
   <li><a href="#!" class="t-s "><img src="images/student-avatar-f.png" alt="as" class="avatar-nav-drop circle1"></i> Relena Peacecraft</a></li>
   <li class="divider"></li>
-  <li><a href="#!" class="t-s du disabled"><i class="icon-linear-history2 left"></i> Modo histórico</a></li>
   <li><a href="#!" class="t-s du"><i class="icon-linear-user-plus left"></i> Editar perfil</a></li>
   <li><a href="#!" class="t-s du"><i class="icon-linear-exit-left left"></i> Cerrar sesión</a></li>
 </ul>
-<ul id="dropdown2" class="dropdown-content drop-notification">
-  <span class="circle dot"></span>
-  <div clasS="notifi"><h6>Notificaciones</h6></div>
-  <li><a href="#!" class="t-s">Las asistencias han sido actualizadas<br><span class="ts-s">Hace 20 minutos</span></a></li>
-  <li class="divider"></li>
-  <li><a href="#!" class="t-s">Su hijo se porto mal<br><span class="ts-s">Hace 2 horas</span></a></li>
-  <li class="divider"></li>
-  <li><a href="#!" class="t-s">Suspensión de clases<br><span class="ts-s">Ayer</span></a></li>
-</ul>
-<ul id="dropdown3" class="dropdown-content drop-messages">
-  <span class="circle dot"></span>
-  <div clasS="notifi"><h6>Mensajes</h6></div>
-  <li><a href="#!" class="t-s"><b>Javier alonso</b> te ha enviado un mensaje<br><span class="ts-s">Hace 10 minutos.</span></a></li>
-  <li class="divider"></li>
-  <li><a href="#!" class="t-s"><b>John Pol</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
-  <li class="divider"></li>
-  <li><a href="#!" class="t-s"><b>Eugenia Leto</b> te ha enviado un mensaje<br><span class="ts-s">Hace 20 minutos.</span></a></li>
-</ul>
-<nav>
+
+<nav class="bg-historico">
   <div class="nav-wrapper">
   <div class=""><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="icon-linear-menu"></i></a>
     
@@ -69,8 +51,10 @@
       <li><a href="#" class="b-focus">Boletín</a></li>
     </ul>
     <ul class="right fix">
-      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown2"><i class="icon-linear-alarm"><span class="badge1 badge1-danger circle">3</span></i></a></li>
-      <li><a class="dropdown-button ic" href="#!" data-activates="dropdown3"><i class="icon-linear-envelope"><span class="badge1 badge1-danger circle">1</span></i></a></li>
+      <li><a href="under-construction.html" class=""><i class="icon-linear-chevron-left icon-mailbox-size"></i></a></li>
+      <li>2015</li>
+      <li><a href="under-construction.html" class="disabled"><i class="icon-linear-chevron-right icon-mailbox-size"></i></a></li>
+      <li><a class="dropdown-button ic tooltipped" data-position="bot" data-delay="25" data-tooltip="Salir de modo histórico" href="#!"><i class="icon-linear-exit-left"></i></a></li>
       <li><a class="dropdown-button ic" href="#!" data-activates="dropdown1">Sr Peacecraft<i class="icon-linear-chevron-down right"></i></a></li>
     </ul>
   </div>
@@ -102,13 +86,13 @@
         </div>
   </div>
     <div class="row mar-top-soft">
-        <div class="col s12 m1 l1">
+        <div class="col s12 m2 l2">
           <img src="images/school-blank.png" alt="colegio logo" class="inst-thumb-boletin">
         </div>
-        <div class="col s12 m1 l5">
+        <div class="col s12 m5 l6">
           <h5 class="mar-top-soft"><strong>Nombre del colegio</strong></h5>
         </div>
-        <div class="col s12 m4 l6">
+        <div class="col s12 m5 l4">
           <p class=""><img src="images/user-blank.png" alt="as" class="avatar-boletin circle"> Nombre del alumno</p> 
           <p class="">Año: <span><STRONG>2015</STRONG></span></p>  
           <p class="">Curso: <span><strong>1 A</span></STRONG></p>  
@@ -119,7 +103,7 @@
     
           <div class="row">
             <div class="col s12 m12 l12">
-              <table class="boletin centered responsive-table mar-top-soft">
+              <table class="boletin centered mar-top-soft">
                 <thead>
                   <tr>
                       <th>Asignaturas</th>
@@ -325,7 +309,7 @@
                  
                 </tbody>
               </table>
-              <table class="boletin centered responsive-table mar-top-soft">
+              <table class="boletin centered mar-top-soft">
                 <thead>
                   <tr>
                       <th>Observaciones</th>

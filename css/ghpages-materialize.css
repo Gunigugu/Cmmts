@@ -2255,6 +2255,20 @@ table {
   display: table; }
   table.bordered > thead > tr, table.bordered > tbody > tr {
     border-bottom: 1px solid #d0d0d0; }
+
+  table.boletin th, td {
+    border: 1px solid #d0d0d0;
+    padding: 6px 0px 6px 0px !important;
+  }
+  table.boletin th {
+    border: 1px solid #fff;
+    padding: 8px 0px 8px 0px !important;
+  }
+  table.boletin thead {
+    background-color: #F39A6D;
+    color: #ffffff;
+  }
+
   table.striped > tbody > tr:nth-child(odd) {
     background-color: #F4F7F8; }
   table.striped > tbody > tr > td {
@@ -8453,6 +8467,29 @@ nav {
       -o-transition: color .3s;
       -ms-transition: color .3s;
       transition: color .3s; }
+    
+    nav ul a.disabled {
+      font-size: 1rem;
+      color: #cacaca;
+      display: block;
+
+ }
+     nav ul a.disabled:hover {
+      font-size: 1rem;
+      cursor: context-menu;
+      color: #cacaca;
+      display: block;
+ }
+    nav ul a  {
+      font-size: 1rem;
+      color: #666666;
+      display: block;
+      padding: 0 15px;
+       -webkit-transition: color .3s;
+      -moz-transition: color .3s;
+      -o-transition: color .3s;
+      -ms-transition: color .3s;
+      transition: color .3s; }
       nav ul a:hover {
         color: #F39A6D; }
         nav ul a.active {
@@ -12432,11 +12469,23 @@ vertical-align: sub;}
         vertical-align: sub;
         display: inline-block;
         margin: 20px 10px 0px 0px; }
+        .avatar-boletin {
+        
+        height: 32px;
+        overflow: hidden;
+        vertical-align: sub;
+        display: inline-block;
+        margin: 0px 10px 0px 0px; }
+
 
 .inst-thumb {
-        
-        
-        height: 85px;
+        height: 86px;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+.inst-thumb-boletin {
+        height: 86px;
         overflow: hidden;
         display: inline-block;
         vertical-align: middle;
@@ -13192,4 +13241,8 @@ table.highlight > tbody > tr:hover {
 
 .dropdown-menu li a:hover {
     color: #DB8B63 !important;
+}
+
+.bg-historico {
+  background-color: #FDEBE2 !important;
 }
