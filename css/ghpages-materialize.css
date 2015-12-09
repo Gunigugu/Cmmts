@@ -2256,17 +2256,19 @@ table {
   table.bordered > thead > tr, table.bordered > tbody > tr {
     border-bottom: 1px solid #d0d0d0; }
 
-  table.boletin th, td {
+  table.boletin > tbody > tr > td {
     border: 1px solid #d0d0d0;
     padding: 6px 0px 6px 0px !important;
   }
-  table.boletin th {
-    border: 1px solid #fff;
-    padding: 8px 0px 8px 0px !important;
+  table.boletin > thead > tr > th {
+    border: 1px solid #d0d0d0;
+    padding: 10px 0px 10px 0px !important;
   }
+
   table.boletin thead {
     background-color: #F39A6D;
     color: #ffffff;
+    padding: 8px 0px 8px 0px !important;
   }
 
   table.striped > tbody > tr:nth-child(odd) {
