@@ -98,6 +98,23 @@
           <h3 class="header">Editar institución:</h3>              
         </div>  
   </div> 
+  <div class="row">
+    <div class="col s12 m6 l6 center-align">
+       <img src="images/school-blank.png" alt="as" class="inst-thumb mar-top-soft">
+    </div>
+    <div class="col s12 m6 l6">
+        <form action="#">
+            <div class="file-field input-field">
+              <input class="file-path validate" type="text"/>
+              <label for="logo_img">Cambiar logotipo de la institución</label>
+              <div class="btn-large">
+                <span>Elegir imagen</span>
+                <input type="file" />
+              </div>
+           </div>
+        </form>
+    </div>
+  </div>
   <div class="row mar-top-soft">
         <div class="input-field col s12 m6 l6">
             <input value="Colegio Florida Day School" id="nombre_inst" type="text" class="validate">
@@ -108,20 +125,7 @@
             <label for="cuit" data-error="Este campo solo acepta valores numéricos" data-success="Correcto">C.U.I.T</label>         
             </div>
   </div>
-  <div class="row">
-    <div class="col s12 m6 l6">
-        <form action="#">
-            <div class="file-field input-field">
-              <input class="file-path validate" type="text"/>
-              <label for="logo_img">Logotipo de la institución</label>
-              <div class="btn-large">
-                <span>Elegir archivo</span>
-                <input type="file" />
-              </div>
-           </div>
-        </form>
-    </div>
-  </div>
+
     <div class="row mar-top-soft">
               <div class="col s10 m10 l10">
           <h3 class="header">Datos de establecimiento</h3>              
@@ -140,8 +144,8 @@
               <option value="2">Mar del Plata</option>
               <option value="3">Río Grande</option>
             </select>
-            
           </div>
+
         <div class="input-field col s12 m6 l6">        
             <input  value="Nahuel Huapi 3542" id="nombre_apoderado" type="text" class="validate">
             <label for="nombre_apoderado">Dirección</label>
@@ -294,6 +298,7 @@
 
     <!--  Scripts-->
 
+        <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }
     </script>
@@ -305,9 +310,7 @@
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   });</script>
-    <script>$(document).ready(function() {
-    $('select').material_select();
-  });</script>
+
 
 
   </body>

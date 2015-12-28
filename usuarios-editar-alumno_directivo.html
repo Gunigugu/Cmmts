@@ -150,6 +150,13 @@
                         <input value="41304452" id="nombre_inst" type="text" class="validate">
                         <label for="nombre_inst">DNI</label>    
                     </div>
+                        <div class="input-field col s12 m6 l6">
+                          <select>
+                            <option value="" disabled selected>Establecimiento</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        </div>
                       <div class="input-field col s12 m6 l6">
                             <i class="icon-linear-magnifier prefix"></i>
                             <input id="icon_prefix" type="text" class="validate">
@@ -163,8 +170,23 @@
                       </div>
                     </div>
 
-                      <div class="row mar-bot">
-                       <div class=" col s12 m6 l6">
+                      <div class="row">
+                        <div class="col s12 m6 l6 center-align">
+                           <img src="images/user-blank.png" alt="as" class="circle inst-thumb mar-top-soft">
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <form action="#">
+                                <div class="file-field input-field">
+                                  <input class="file-path validate" type="text"/>
+                                  <label for="logo_img">Foto del alumno</label>
+                                  <div class="btn-large">
+                                    <span>Elegir foto</span>
+                                    <input type="file" />
+                                  </div>
+                               </div>
+                            </form>
+                        </div>
+                       <div class=" col s12 m6 l6 mar-bot">
                        <h6 class="header">Género</h6>
                               <form action="#">
                                <div class="row">
@@ -279,25 +301,9 @@
                               <input id="icon_prefix" type="text" class="validate">
                               <label for="icon_prefix">Especialidad</label>   
                         </div>
-                        <div class="input-field col s12 m6 l6">
-                              <i class="icon-linear-magnifier prefix"></i>
-                              <input id="icon_prefix" type="text" class="validate">
-                              <label for="icon_prefix">Establecimiento</label>   
-                        </div>
                     </div>
                     <div class="row">
-                        <div class="col s12 m6 l6">
-                            <form action="#">
-                                <div class="file-field input-field">
-                                  <input class="file-path validate" type="text"/>
-                                  <label for="logo_img">Foto del alumno</label>
-                                  <div class="btn-large">
-                                    <span>Elegir archivo</span>
-                                    <input type="file" />
-                                  </div>
-                               </div>
-                            </form>
-                        </div>
+
                         <div class="input-field col s12 m6 l3">        
                             <input  id="number" type="text" class="validate">
                             <label for="number">Grupo sanguíneo</label>
