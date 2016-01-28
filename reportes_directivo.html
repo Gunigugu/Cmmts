@@ -114,252 +114,567 @@
  </header>
  <!-- startMain content--> 
 
-  <main><!-- startMain content-->   
-<div class="container fadeIn animated">
-
+<main><!-- startMain content-->   
+  <div class="container fadeIn animated">
     <div class="row">
               <div class="col s10 m10 l10">
           <h4 class="header">Reportes</h4>
-          <h5 class="header">Filtros generales</h5>      
+          <h5 class="header">¿Qué quieres reportar?</h5>      
         </div> 
     </div>
-
-  <div class="row mar-top-soft">
-            <div class=" col s12 m6 l6"> 
-            <i class="icon-linear-calendar-full"></i>
-                  <label for="birthdate" class="">Fecha desde</label>
-                <input type="date" class="datepicker">
-            </div>
-            <div class=" col s12 m6 l6"> 
-            <i class="icon-linear-calendar-full"></i>
-                  <label for="birthdate" class="">Fecha hasta</label>
-                <input type="date" class="datepicker">
-            </div>
-
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test1" class="filled-in"/>
-                                <label for="test1"></label>
-                              </p>
-                          </form>
+    <div class="row mar-top-soft">
+         <div class=" col s12 m12 l12 mar-bot">
+            <h6 class="header">Selecciona el tipo de reporte a generar.</h6>
+                <form action="#">
+                 <div class="row">
+                  <div class=" col s6">
+                    <p>
+                      <input name="group1" type="radio" id="test1" checked />
+                      <label for="test1">Cuántos</label>
+                    </p>
                     </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Alumno</h5>
-                      </div>
-                    <div class="input-field col s12 m9 l9">
-                      <i class="icon-linear-magnifier prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Alumno</label>
+                    <div class=" col s6">
+                    <p>
+                      <input name="group1" type="radio" id="test2" />
+                      <label for="test2">Cúales</label>
+                    </p>
                     </div>
-                </div><!--  End row  --> 
-            </div>
-
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test2" class="filled-in"/>
-                                <label for="test2"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Grupo</h5>
-                      </div>
-                    <div class="input-field col s12 m9 l9">
-                      <i class="icon-linear-magnifier prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Grupo</label>
-                    </div>
-                </div><!--  End row  --> 
-            </div>
-
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test3" class="filled-in"/>
-                                <label for="test3"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Materia</h5>
-                      </div>
-                    <div class="input-field col s12 m9 l9">
-                      <i class="icon-linear-magnifier prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Materia</label>
-                    </div>
-                </div><!--  End row  --> 
-            </div>
-
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test4" class="filled-in"/>
-                                <label for="test4"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Docente</h5>
-                      </div>
-                    <div class="input-field col s12 m9 l9">
-                      <i class="icon-linear-magnifier prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Docente</label>
-                    </div>
-                </div><!--  End row  --> 
-            </div>
-
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test5" class="filled-in"/>
-                                <label for="test5"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Bedel</h5>
-                      </div>
-                    <div class="input-field col s12 m9 l9">
-                      <i class="icon-linear-magnifier prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
-                      <label for="icon_prefix">Bedel</label>
-                    </div>
-                </div><!--  End row  --> 
-            </div>
-
-    <div class="row">
-        <div class="col s12 m12 l12">
-        <div class="divider mar-bot-top"></div>
-          <h5 class="header">Asistencia</h5>      
-        </div> 
-    </div>
-            <div class="col s12 mar-top-soft">
-                <div class="row">
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test6" class="filled-in"/>
-                                <label for="test6"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Tarde</h5>
-                      </div>
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test7" class="filled-in"/>
-                                <label for="test7"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">Falta</h5>
-                      </div>
-                      <div class="col s2 m1 l1 mar-top-fix">
-                          <form action="#">
-                              <p>
-                                <input type="checkbox" id="test8" class="filled-in"/>
-                                <label for="test8"></label>
-                              </p>
-                          </form>
-                    </div>
-                      <div class="col s10 m2 l2 mar-top-fix">
-                        <h5 class="header">En horario</h5>
-                      </div>
-
-                </div><!--  End row  --> 
-            </div>
-
-    <div class="row">
-        <div class="col s12 m12 l12">
-        <div class="divider mar-bot-top"></div>
-          <h5 class="header">Calificaciones</h5>      
-        </div> 
-    </div>
-        <div class="row">
-                  <div class="input-field col s12 m6 l6 mar-top-soft">
-                      <select>
-                        <option value="" disabled >Seleccionar período</option>
-                        <option value="1">Período 1</option>
-                        <option value="2" selected>Período 2</option>
-                        <option value="3">Período 3</option>
-                        <option value="4">Período 4</option>
-                      </select>
-                      <label>Período evaluativo</label>
-                    </div>
-                  <div class="input-field col s12 m6 l6 mar-top-soft">
-                      <select>
-                        <option value="" disabled >Seleccionar calificación</option>
-                        <option value="1">Insuficiente</option>
-                        <option value="2" selected>Regular</option>
-                        <option value="3">Bueno</option>
-                        <option value="4">Muy bueno</option>
-                        <option value="5">Excelente</option>
-                      </select>
-                      <label>Calificación</label>
-                    </div>
+                  </div>
+                </form>
         </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
-        <div class="divider mar-bot-top"></div>
-          <h5 class="header">Convivencia</h5>      
-        </div> 
-    </div>
-        
-        <div class="row">
-                      <div class="col s6 mar-top-soft center-align border-right">
 
-                            <div class="col s6 mar-top-fix">
-                                <i class="icon-linear-wink news-i-g conv-i"></i>
-                            </div>
-                                <div class="col s6">
+        <div class="col s12 m12 l12">    <!--  empieza desplegables  -->
+          <ul class="collapsible mar-top-soft" data-collapsible="expandable">
+             <li>      
+                <div class="collapsible-header"><h5 class="panel-title"><i class="icon-linear-funnel"></i> Alumnos<i class="icon-linear-chevron-down right"></i></h5></div>
+
+                  <div class="collapsible-body"> <!--  start alumno  -->
+                      <div class="row">
+
+
+
+                          <div class="col l12 pad-all-collapsible">
+                            <div class="row">
+                                <h6 class="header mar-left">¿Qué datos queres ver en el reporte?</h6>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test6" class="filled-in"/>
+                                            <label for="test6">Nombre</label>
+                                          </p>
+                                      </form>
+                                </div>
+
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test7" class="filled-in"/>
+                                            <label for="test7">Apellido</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Edad</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Sexo</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s12 divider"></div>
+                            </div><!--  End row  --> 
+
+                          <div class="row mar-top-soft">
+                              <div class="input-field col s12 m4 l4">
+                                  <input id="nombre_inst" type="text" class="validate">
+                                  <label for="nombre_inst">Nombre</label>    
+                              </div>
+                              <div class="input-field col s12 m4 l4">
+                                  <input id="apellido" type="text" class="validate">
+                                  <label for="apellido">Apellido</label>         
+                              </div> 
+                              <div class="input-field col s12 m4 l4">         
+                                  <input id="edad" type="number" class="validate">
+                                  <label for="edado">Edad</label>
+                              </div>
+                             <div class=" col s12 m6 l6 mar-bot">
+                              <h6 class="header">Género</h6>
                                     <form action="#">
+                                     <div class="row">
+                                      <div class=" col s6">
                                         <p>
-                                          <input type="checkbox" id="test11" class="filled-in">
-                                          <label for="test11"></label>
+                                          <input name="group1" type="radio" id="test11" checked />
+                                          <label for="test11">Masculino</label>
                                         </p>
+                                        </div>
+                                        <div class=" col s6">
+                                        <p>
+                                          <input name="group1" type="radio" id="test22" />
+                                          <label for="test22">Femenino</label>
+                                        </p>
+                                        </div>
+                                      </div>
                                     </form>
+                            </div>
+                            <div class="col s12 divider"></div>
+                        </div> 
+                          <div class="row mar-top-soft">
+                            <h5 class="header mar-left">Asistencia</h5>
+                              <div class="input-field col s12 m4 l6">
+                                  <input id="nombre_inst" type="text" class="validate">
+                                  <label for="nombre_inst">Nombre</label>    
+                              </div>
+                              <div class="input-field col s12 m4 l6">
+                                  <input id="apellido" type="text" class="validate">
+                                  <label for="apellido">Materia</label>         
+                              </div>
+                                  <div class="col s3 m3 l4">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Presente</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l4">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Ausente</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l4">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Tarde</label>
+                                          </p>
+                                      </form>
+                                </div>
+
+                            <div class="col s12 divider"></div>
+                          </div> 
+                          <div class="row mar-top-soft">
+                            <h5 class="header mar-left">Convivencia</h5>
+                                  <div class=" col s12 m4 l4"> 
+                                  <i class="icon-linear-calendar-full"></i>
+                                        <label for="birthdate" class="">Fecha</label>
+                                      <input type="date" class="datepicker">
+                                  </div>
+                                  <div class="col s3 m3 l4">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8"><i class="icon-linear-wink news-i-g conv-i"></i></label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l4">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8"><i class="icon-linear-mad news-i-b conv-i"></i></label>
+                                          </p>
+                                      </form>
+                                </div>
+
+                            <div class="col s12 divider mar-top-soft"></div>
+                          </div> 
+                          <div class="row mar-top-soft">
+                            <h5 class="header mar-left">Evaluaciones</h5>
+                                  <div class="input-field col s12 m6 l5 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled >Seleccionar materia</option>
+                                        <option value="1">materia 1</option>
+                                        <option value="2">materia 2</option>
+                                        <option value="3">materia 3</option>
+                                        <option value="4">materia 4</option>
+                                      </select>
+                                      <label>Materias</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l5 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected >Seleccionar materia</option>
+                                        <option value="1">materia 1</option>
+                                        <option value="2">materia 2</option>
+                                        <option value="3">materia 3</option>
+                                        <option value="4">materia 4</option>
+                                      </select>
+                                      <label>Exámen</label>
+                                  </div>
+                                  <div class="input-field col s12 m4 l2 mar-top-soft">         
+                                      <input id="valor" type="number" class="validate">
+                                      <label for="valor">Valor</label>
+                                  </div>
+                          </div> 
+
+                              <div class="col s12 m12 l12 left mar-top-soft"><a href="#" class="btn-xsmall btn-xsmall-fix mistake waves-effect waves-light">Limpiar</a> <a href="#" class="btn-xsmall btn-xsmall-fix waves-effect waves-light">Generar reporte</a></div>
+                      </div>
+                  </div> <!--  end alumno  -->
+             </li>
+             <li>      
+                <div class="collapsible-header"><h5 class="panel-title"><i class="icon-linear-funnel"></i> Evaluaciones<i class="icon-linear-chevron-down right"></i></h5></div>
+                  <div class="collapsible-body"> <!--  start evaluacion  -->
+                      <div class="row">
+                          <div class="col l12 pad-all-collapsible">
+                            <div class="row">
+                                <h6 class="header mar-left">¿Qué datos queres ver en el reporte?</h6>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test6" class="filled-in"/>
+                                            <label for="test6">Materia</label>
+                                          </p>
+                                      </form>
+                                </div>
+
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test7" class="filled-in"/>
+                                            <label for="test7">Nombre de evaluac.</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Docente</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Calificado</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">No calificado</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Fecha</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s12 divider"></div>
+                            </div><!--  End row  --> 
+
+                          <div class="row mar-top-soft">
+                                  <div class=" col s12 m6 l6"> 
+                                  <i class="icon-linear-calendar-full"></i>
+                                        <label for="birthdate" class="">Fecha desde</label>
+                                      <input type="date" class="datepicker">
+                                  </div>
+                                  <div class=" col s12 m6 l6"> 
+                                  <i class="icon-linear-calendar-full"></i>
+                                        <label for="birthdate" class="">Fecha hasta</label>
+                                      <input type="date" class="datepicker">
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar materia</option>
+                                        <option value="1">materia 1</option>
+                                        <option value="2">materia 2</option>
+                                        <option value="3">materia 3</option>
+                                        <option value="4">materia 4</option>
+                                      </select>
+                                      <label>Materias</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar Docente</option>
+                                        <option value="1">docente 1</option>
+                                        <option value="2">docente 2</option>
+                                        <option value="3">docente 3</option>
+                                        <option value="4">docente 4</option>
+                                      </select>
+                                      <label>Docente</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">nombre 1</option>
+                                        <option value="2">nombre 2</option>
+                                        <option value="3">nombre 3</option>
+                                        <option value="4">nombre 4</option>
+                                      </select>
+                                      <label>Nombre evaluación</label>
+                                  </div>
+
+                        </div> 
+
+                              <div class="col s12 m12 l12 left mar-top-soft">
+                                <a href="#" class="btn-xsmall btn-xsmall-fix mistake waves-effect waves-light">Limpiar</a> <a href="#" class="btn-xsmall btn-xsmall-fix waves-effect waves-light">Generar reporte</a>
                               </div>
                       </div>
-                      <div class="col s6 mar-top-soft center-align">
+                  </div> <!--  end evaluac  -->
+             </li>
+             <li>      
+                <div class="collapsible-header"><h5 class="panel-title"><i class="icon-linear-funnel"></i> Calificaciones<i class="icon-linear-chevron-down right"></i></h5></div>
+                  <div class="collapsible-body"> <!--  start calificac  -->
+                      <div class="row">
+                          <div class="col l12 pad-all-collapsible">
+                            <div class="row">
+                                <h6 class="header mar-left">¿Qué datos queres ver en el reporte?</h6>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test6" class="filled-in"/>
+                                            <label for="test6">Valor</label>
+                                          </p>
+                                      </form>
+                                </div>
 
-                            <div class="col s6 mar-top-fix">
-                                <i class="icon-linear-mad news-i-b conv-i"></i>
-                            </div>
-                                <div class="col s6">
-                                    <form action="#">
-                                        <p>
-                                          <input type="checkbox" id="test12" class="filled-in">
-                                          <label for="test12"></label>
-                                        </p>
-                                    </form>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test7" class="filled-in"/>
+                                            <label for="test7">Nombre de evaluac.</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">Alumno</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Docente</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Observaciones.</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s12 divider"></div>
+                            </div><!--  End row  --> 
+
+                          <div class="row mar-top-soft">
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">nombre 1</option>
+                                        <option value="2">nombre 2</option>
+                                        <option value="3">nombre 3</option>
+                                        <option value="4">nombre 4</option>
+                                      </select>
+                                      <label>Nombre evaluación</label>
+                                  </div>
+                                  <div class="input-field col s12 m3 l3 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">Mayor que</option>
+                                        <option value="2">Menor que</option>
+                                      </select>
+                                      <label>Mayor o menor</label>
+                                  </div>
+                                  <div class="input-field col s12 m3 l3 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">I</option>
+                                        <option value="2">R</option>
+                                        <option value="3">B</option>
+                                        <option value="4">MB</option>
+                                      </select>
+                                      <label>Valor</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                      </select>
+                                      <label>Docente</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                      </select>
+                                      <label>Alumno</label>
+                                  </div>
+                        </div> 
+
+                              <div class="col s12 m12 l12 left mar-top-soft">
+                                <a href="#" class="btn-xsmall btn-xsmall-fix mistake waves-effect waves-light">Limpiar</a> <a href="#" class="btn-xsmall btn-xsmall-fix waves-effect waves-light">Generar reporte</a>
                               </div>
                       </div>
-          </div>
+                  </div> <!--  end evaluac  -->
+             </li>
+             <li>      
+                <div class="collapsible-header"><h5 class="panel-title"><i class="icon-linear-funnel"></i> Docentes<i class="icon-linear-chevron-down right"></i></h5></div>
+                  <div class="collapsible-body"> <!--  start calificac  -->
+                      <div class="row">
+                          <div class="col l12 pad-all-collapsible">
+                            <div class="row">
+                                <h6 class="header mar-left">¿Qué datos queres ver en el reporte?</h6>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test6" class="filled-in"/>
+                                            <label for="test6">Nombre</label>
+                                          </p>
+                                      </form>
+                                </div>
 
-  <div class="row">
-      <div class="col s12 m12 l12 center-align mar-top-soft"><a href="#" class="btn-large waves-effect waves-light center-align mar-right">Generar reporte</a></div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test7" class="filled-in"/>
+                                            <label for="test7">Apellido</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test8">DNI</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Fecha ingreso</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Fecha nacimiento.</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Materia</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9">Convivencia</label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s3 m3 l3">
+                                      <form action="#">
+                                          <p>
+                                            <input type="checkbox" id="test8" class="filled-in"/>
+                                            <label for="test9"></label>
+                                          </p>
+                                      </form>
+                                </div>
+                                  <div class="col s12 divider"></div>
+                            </div><!--  End row  --> 
+
+                          <div class="row mar-top-soft">
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">nombre 1</option>
+                                        <option value="2">nombre 2</option>
+                                        <option value="3">nombre 3</option>
+                                        <option value="4">nombre 4</option>
+                                      </select>
+                                      <label>Nombre evaluación</label>
+                                  </div>
+                                  <div class="input-field col s12 m3 l3 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">Mayor que</option>
+                                        <option value="2">Menor que</option>
+                                      </select>
+                                      <label>Mayor o menor</label>
+                                  </div>
+                                  <div class="input-field col s12 m3 l3 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">I</option>
+                                        <option value="2">R</option>
+                                        <option value="3">B</option>
+                                        <option value="4">MB</option>
+                                      </select>
+                                      <label>Valor</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                      </select>
+                                      <label>Docente</label>
+                                  </div>
+                                  <div class="input-field col s12 m6 l6 mar-top-soft">
+                                      <select>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                      </select>
+                                      <label>Alumno</label>
+                                  </div>
+                        </div> 
+
+                              <div class="col s12 m12 l12 left mar-top-soft">
+                                <a href="#" class="btn-xsmall btn-xsmall-fix mistake waves-effect waves-light">Limpiar</a> <a href="#" class="btn-xsmall btn-xsmall-fix waves-effect waves-light">Generar reporte</a>
+                              </div>
+                      </div>
+                  </div> <!--  end evaluac  -->
+             </li>
+          </ul>
+        </div>
+   <!--  termina desplegables  -->
+    </div><!--  End row  --> 
   </div>
- </div>
-</div>   <!-- end container-->  
-
-
  </main><!-- end Main content--> 
 <footer class="page-footer">
           <div class="footer-copyright">
