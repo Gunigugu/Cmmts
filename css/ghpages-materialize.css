@@ -13093,6 +13093,9 @@ table.highlight > tbody > tr:hover {
     background-color: #f2f2f2;
 }
 
+table.highlight > tbody > tr.selected {
+    background-color: #FDEBE2;
+}
 /* mailbox */
 
 .mailbox {
