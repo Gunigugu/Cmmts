@@ -12499,6 +12499,11 @@ vertical-align: sub;}
         display: inline-block;
         margin: 0px 10px 0px 0px; }
 
+        .logo-boletin {
+        
+        height: 64px;
+        float: right;
+ }
 
 .inst-thumb {
         height: 86px;
@@ -13096,6 +13101,10 @@ table.highlight > tbody > tr:hover {
 table.highlight > tbody > tr.selected {
     background-color: #FDEBE2;
 }
+
+tr.priority {
+    background-color: #FDEBE2 !important;
+}
 /* mailbox */
 
 .mailbox {
@@ -13287,3 +13296,7 @@ table.highlight > tbody > tr.selected {
 }
 
 .picker__clear  {   padding: 0px 10px 0px 10px;}
+
+.hide-me {
+  visibility: hidden;
+}
